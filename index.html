@@ -6914,7 +6914,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 async function loadExternalTemplates() {
                     try {
                         // 首先尝试加载同目录下的预设排版.json
-                        const response = await fetch('./index.json');
+                        const response = await fetch('./预设排版.json');
                         if (response.ok) {
                             const externalTemplates = await response.json();
                             
@@ -6940,7 +6940,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                             
                             // 如果排版工具目录下没有，尝试根目录
                             try {
-                                const rootResponse = await fetch('./index.json');
+                                const rootResponse = await fetch('./预设排版.json');
                                 if (rootResponse.ok) {
                                     const externalTemplates = await rootResponse.json();
                                     
@@ -6957,7 +6957,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                     
                                     console.log(`✅ 成功从根目录加载 ${Object.keys(externalTemplates).length} 个外部排版预设`);
                                 } else {
-                                    console.warn('⚠️ 根目录下也没有 index.json 文件，使用默认模板');
+                                    console.warn('⚠️ 根目录下也没有 预设排版.json 文件，使用默认模板');
                                 }
                             } catch(rootError) {
                                 console.warn('❌ 根目录加载失败:', rootError.message);
@@ -6967,7 +6967,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                         console.warn('❌ 加载外部模板时出错:', error.message);
                         // 尝试从根目录位置加载
                         try {
-                            const fallbackResponse = await fetch('./index.json');
+                            const fallbackResponse = await fetch('./预设排版.json');
                             if (fallbackResponse.ok) {
                                 const externalTemplates = await fallbackResponse.json();
                                 
@@ -6984,7 +6984,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                 
                                 console.log(`✅ 成功加载 ${Object.keys(externalTemplates).length} 个外部排版预设（备用路径）`);
                             } else {
-                                console.warn('⚠️ 所有路径均无法加载 index.json 文件，使用默认模板');
+                                console.warn('⚠️ 所有路径均无法加载 预设排版.json 文件，使用默认模板');
                             }
                         } catch(fallbackError) {
                             console.warn('❌ 备用路径加载也失败:', fallbackError.message);
