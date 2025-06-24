@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 公众号排版工具</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#667eea'
+                    },
+                    animation: {
+                        'aurora': 'aurora 15s ease infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate'
+                    },
+                    keyframes: {
+                        aurora: {
+                            '0%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                            '100%': { backgroundPosition: '0% 50%' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 20px rgba(102, 126, 234, 0.3)' },
+                            '100%': { boxShadow: '0 0 30px rgba(102, 126, 234, 0.6)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 玻璃态效果 */
+        .glass {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+        }
+        
+        .glass-strong {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.45);
+        }
+        
+        /* 极光背景 */
+        .aurora-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            background-size: 400% 400%;
+            animation: aurora 15s ease infinite;
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* 输入框样式 */
+        .glass-input {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-input:focus {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(102, 126, 234, 0.5);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+            outline: none;
+        }
+        
+        /* 按钮效果 */
+        .glass-button {
+            background: rgba(102, 126, 234, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(102, 126, 234, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-button:hover {
+            background: rgba(102, 126, 234, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        /* 错误提示动画 */
+        .shake {
+            animation: shake 0.5s;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        /* 防止右键和选中 */
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        /* 禁用拖拽 */
+        * {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen aurora-bg relative overflow-hidden">
+    <!-- 浮动光球背景 -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 floating"></div>
+        <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 floating" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-96 h-96 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 floating" style="animation-delay: 2s;"></div>
+    </div>
+    
+    <!-- 主要内容 -->
+    <div class="relative z-10 min-h-screen flex items-center justify-center p-4">
+        <div class="glass-strong rounded-3xl p-8 w-full max-w-md relative">
+            <!-- Logo区域 -->
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center justify-center w-20 h-20 glass rounded-2xl mb-4 floating">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                    </svg>
+                </div>
+                <h1 class="text-3xl font-bold text-white mb-2">公众号排版工具</h1>
+                <p class="text-white/80 text-sm">专业级玻璃态设计风格</p>
+            </div>
+            
+            <!-- 登录表单 -->
+            <form id="loginForm" class="space-y-6">
+                <div>
+                    <label class="block text-white/90 text-sm font-medium mb-2">用户名</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        class="glass-input w-full px-4 py-3 rounded-xl text-white placeholder-white/50" 
+                        placeholder="请输入用户名"
+                        autocomplete="off"
+                        required
+                    >
+                </div>
+                
+                <div>
+                    <label class="block text-white/90 text-sm font-medium mb-2">密码</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        class="glass-input w-full px-4 py-3 rounded-xl text-white placeholder-white/50" 
+                        placeholder="请输入密码"
+                        autocomplete="off"
+                        required
+                    >
+                </div>
+                
+                <div id="errorMessage" class="hidden bg-red-500/20 border border-red-500/50 text-red-100 px-4 py-3 rounded-xl text-sm">
+                </div>
+                
+                <button 
+                    type="submit" 
+                    id="loginBtn"
+                    class="glass-button w-full py-3 rounded-xl text-white font-medium transition-all duration-300"
+                >
+                    <span id="loginBtnText">登录</span>
+                    <span id="loginBtnLoading" class="hidden">
+                        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        登录中...
+                    </span>
+                </button>
+            </form>
+            
+            <!-- 提示信息 -->
+            <div class="mt-6 text-center">
+                <p class="text-white/60 text-xs">
+                    🔒 安全登录 · 数据加密保护
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 用户认证配置
+        const AUTH_CONFIG = {
+            // 可以设置多个用户
+            users: {
+                'admin': 'admin123',
+                'user1': 'password123',
+                'demo': 'demo123'
+            },
+            // 会话过期时间（小时）
+            sessionTimeout: 24
+        };
+
+        // 防止各种保存和复制操作
+        document.addEventListener('DOMContentLoaded', function() {
+            // 禁用右键菜单
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                showProtectionMessage('禁止右键操作');
+                return false;
+            });
+
+            // 禁用常用快捷键
+            document.addEventListener('keydown', function(e) {
+                // Ctrl+S (保存)
+                if (e.ctrlKey && e.key === 's') {
+                    e.preventDefault();
+                    showProtectionMessage('🚫 禁止保存到本地，请在线使用！');
+                    return false;
+                }
+                
+                // Ctrl+A (全选)
+                if (e.ctrlKey && e.key === 'a') {
+                    e.preventDefault();
+                    showProtectionMessage('禁止全选操作');
+                    return false;
+                }
+                
+                // Ctrl+C (复制)
+                if (e.ctrlKey && e.key === 'c') {
+                    e.preventDefault();
+                    showProtectionMessage('禁止复制操作');
+                    return false;
+                }
+                
+                // Ctrl+P (打印)
+                if (e.ctrlKey && e.key === 'p') {
+                    e.preventDefault();
+                    showProtectionMessage('禁止打印操作');
+                    return false;
+                }
+                
+                // F12 (开发者工具)
+                if (e.key === 'F12') {
+                    e.preventDefault();
+                    showProtectionMessage('禁止打开开发者工具');
+                    return false;
+                }
+                
+                // Ctrl+Shift+I (开发者工具)
+                if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+                    e.preventDefault();
+                    showProtectionMessage('禁止打开开发者工具');
+                    return false;
+                }
+                
+                // Ctrl+U (查看源代码)
+                if (e.ctrlKey && e.key === 'u') {
+                    e.preventDefault();
+                    showProtectionMessage('禁止查看源代码');
+                    return false;
+                }
+            });
+
+            // 禁用选中文本
+            document.addEventListener('selectstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+
+            // 禁用拖拽
+            document.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+
+        // 显示保护提示信息
+        function showProtectionMessage(message) {
+            // 创建提示框
+            const toast = document.createElement('div');
+            toast.className = 'fixed top-4 right-4 z-50 glass-strong rounded-xl px-6 py-4 text-white text-sm font-medium shadow-lg';
+            toast.style.animation = 'slideInRight 0.3s ease-out';
+            toast.innerHTML = `
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.876c1.04 0 1.784-1.007 1.588-2.015l-1.588-8.18C18.78 7.31 17.805 6 16.596 6H7.404c-1.209 0-2.184 1.31-2.352 2.805l-1.588 8.18C3.216 17.993 3.96 19 5 19z"></path>
+                    </svg>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            document.body.appendChild(toast);
+            
+            // 3秒后自动移除
+            setTimeout(() => {
+                toast.style.animation = 'slideOutRight 0.3s ease-in';
+                setTimeout(() => {
+                    document.body.removeChild(toast);
+                }, 300);
+            }, 3000);
+        }
+
+        // 登录表单处理
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value;
+            const errorDiv = document.getElementById('errorMessage');
+            const loginBtn = document.getElementById('loginBtn');
+            const loginBtnText = document.getElementById('loginBtnText');
+            const loginBtnLoading = document.getElementById('loginBtnLoading');
+            
+            // 隐藏错误信息
+            errorDiv.classList.add('hidden');
+            
+            // 显示加载状态
+            loginBtnText.classList.add('hidden');
+            loginBtnLoading.classList.remove('hidden');
+            loginBtn.disabled = true;
+            
+            // 模拟网络延迟
+            setTimeout(() => {
+                // 验证用户名和密码
+                if (AUTH_CONFIG.users[username] && AUTH_CONFIG.users[username] === password) {
+                    // 登录成功
+                    const loginTime = new Date().getTime();
+                    const sessionData = {
+                        username: username,
+                        loginTime: loginTime,
+                        expireTime: loginTime + (AUTH_CONFIG.sessionTimeout * 60 * 60 * 1000)
+                    };
+                    
+                    // 保存会话信息（加密存储）
+                    localStorage.setItem('auth_session', btoa(JSON.stringify(sessionData)));
+                    
+                    // 显示成功信息
+                    showProtectionMessage('✅ 登录成功，正在跳转...');
+                    
+                    // 跳转到主页面
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 1000);
+                    
+                } else {
+                    // 登录失败
+                    errorDiv.textContent = '用户名或密码错误，请重试';
+                    errorDiv.classList.remove('hidden');
+                    
+                    // 添加震动效果
+                    document.querySelector('.glass-strong').classList.add('shake');
+                    setTimeout(() => {
+                        document.querySelector('.glass-strong').classList.remove('shake');
+                    }, 500);
+                    
+                    // 重置按钮状态
+                    loginBtnText.classList.remove('hidden');
+                    loginBtnLoading.classList.add('hidden');
+                    loginBtn.disabled = false;
+                    
+                    // 清空密码输入框
+                    document.getElementById('password').value = '';
+                }
+            }, 1500);
+        });
+
+        // 检查是否已经登录
+        function checkExistingSession() {
+            const sessionData = localStorage.getItem('auth_session');
+            if (sessionData) {
+                try {
+                    const session = JSON.parse(atob(sessionData));
+                    const currentTime = new Date().getTime();
+                    
+                    if (currentTime < session.expireTime) {
+                        // 会话未过期，直接跳转
+                        window.location.href = 'index.html';
+                        return;
+                    } else {
+                        // 会话已过期，清除会话
+                        localStorage.removeItem('auth_session');
+                    }
+                } catch (e) {
+                    // 会话数据损坏，清除会话
+                    localStorage.removeItem('auth_session');
+                }
+            }
+        }
+
+        // 页面加载时检查现有会话
+        checkExistingSession();
+
+        // 添加动画样式
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideInRight {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes slideOutRight {
+                from {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                to {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // 监听页面可见性变化，防止截图
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                document.title = '🔒 请保持页面活跃状态';
+            } else {
+                document.title = '登录 - 公众号排版工具';
+            }
+        });
+
+        // 检测开发者工具
+        let devtools = {open: false,orientation: null};
+        setInterval(function(){
+            if(window.outerHeight - window.innerHeight > 160 || window.outerWidth - window.innerWidth > 160){
+                if(!devtools.open){
+                    devtools.open = true;
+                    showProtectionMessage('🚫 检测到开发者工具，已禁用部分功能');
+                    // 可以在这里添加更多保护措施
+                }
+            } else {
+                devtools.open = false;
+            }
+        }, 500);
+    </script>
+</body>
+</html> 
