@@ -1,151 +1,129 @@
-# 📱 公众号文章排版工具
+# 📝 公众号文章排版工具
 
-一个现代化的微信公众号文章排版工具，采用玻璃态设计风格，为您的文章提供专业级排版体验。
+## ✨ 项目简介
 
-![工具预览](https://img.shields.io/badge/Status-Online-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue)
+一个功能强大的公众号文章排版工具，采用现代玻璃态设计风格，提供专业级的文章排版体验。
+
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-brightgreen)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 
-## ✨ 主要功能
+## 🎨 设计特色
 
-### 🎨 现代玻璃态UI设计
-- 极光动态背景，营造沉浸式创作氛围
-- 四个主题色编辑区：创作蓝海、梦幻紫韵、翠绿森林、橙黄火焰
-- 玻璃态模糊效果，微动画交互体验
-- 响应式设计，完美适配各种设备
+- **🌟 现代玻璃态设计** - 采用最新的玻璃态(Glassmorphism)设计风格
+- **🌈 极光动态背景** - 绚丽的动态极光背景效果
+- **💎 四大功能模块** - 创作内容、美化样式、模板宝库、批量神器
+- **📱 响应式设计** - 完美适配桌面端和移动端
+- **⚡ 实时预览** - 所见即所得的实时预览效果
 
-### ✍️ 强大的编辑功能
-- **Markdown支持**：实时预览，所见即所得
-- **字数统计**：中文字数、英文单词、符号统计
-- **文件导入**：支持.md、.txt文件批量导入
-- **实时预览**：编辑即预览，效果一目了然
+## 🛠️ 核心功能
 
-### 🎨 丰富的样式定制
-- **全局样式**：字体、行间距、字间距自由调节
-- **标题样式**：6级标题独立设置，支持渐变色彩
-- **段落样式**：颜色、对齐、间距精细控制
-- **引用样式**：多种引用块样式选择
-- **代码高亮**：多种编程语言语法高亮
+### 📝 创作内容 - 蓝海风格
+- Markdown语法支持
+- 实时字数统计
+- 文件导入导出
+- 内容清空功能
 
-### 📦 模板管理系统
-- **内置模板**：80+精美预设样式模板
-- **自定义模板**：保存个人专属样式配置
-- **模板预览**：一键预览，快速选择
-- **批量应用**：支持随机模板批量处理
+### 🎨 美化样式 - 梦幻紫韵风格
+- 全局字体设置
+- 行间距、字间距调节
+- 标题样式自定义
+- 段落颜色配置
+- 代码块样式
 
-### ⚡ 批量处理工具
-- **批量转换**：多文件同时处理
-- **模板随机**：为每个文件应用不同模板
-- **ZIP导出**：批量处理结果打包下载
-- **进度显示**：实时显示处理进度
+### 📦 模板宝库 - 翠绿森林风格
+- 80+ 精美预设模板
+- 自定义模板保存
+- 模板导入导出
+- 一键应用样式
 
-### 📤 多种导出方式
-- **HTML导出**：完整样式HTML代码
-- **CSS导出**：独立CSS样式文件
-- **一键复制**：直接复制到公众号编辑器
-- **ZIP下载**：打包下载所有文件
+### ⚡ 批量神器 - 橙黄火焰风格
+- 批量文件处理
+- 多模板随机应用
+- 批量导出功能
+- 进度实时追踪
 
-## 🚀 快速开始
+## 🚀 在线体验
 
-### 在线使用
-直接访问：[公众号排版工具](https://your-username.github.io/wechat-article-formatter/)
+**GitHub Pages 在线访问：** [https://你的用户名.github.io/仓库名](https://你的用户名.github.io/仓库名)
 
-### 本地部署
+## 📥 本地使用
+
+1. **克隆项目**
 ```bash
-# 克隆项目
-git clone https://github.com/your-username/wechat-article-formatter.git
-
-# 进入项目目录
-cd wechat-article-formatter
-
-# 直接用浏览器打开
-open 公众号文章排版工具.html
+git clone https://github.com/你的用户名/仓库名.git
+cd 仓库名
 ```
 
-## 📖 使用指南
+2. **直接打开**
+```bash
+# 在浏览器中打开 index.html
+open index.html  # macOS
+start index.html # Windows
+```
 
-### 基础使用
-1. **编辑内容**：在编辑区输入Markdown格式文章
-2. **调整样式**：在样式设置面板自定义外观
-3. **应用模板**：从模板库选择心仪样式
-4. **导出使用**：复制HTML到公众号编辑器
+或直接双击 `index.html` 文件在浏览器中打开。
 
-### 高级功能
-- **批量处理**：选择多个.md文件批量转换
-- **自定义模板**：保存常用样式配置
-- **快捷操作**：使用快捷键提高效率
+## 🔧 技术栈
 
-## 🎯 技术特性
+- **前端框架：** 原生 HTML5 + CSS3 + JavaScript
+- **样式框架：** Tailwind CSS
+- **设计风格：** Glassmorphism (玻璃态设计)
+- **动画效果：** CSS3 Animations + Keyframes
+- **文件处理：** JavaScript File API
+- **本地存储：** LocalStorage
 
-### 前端技术栈
-- **HTML5**：语义化标签，无障碍访问
-- **CSS3**：玻璃态效果，动画交互
-- **JavaScript ES6+**：模块化代码，现代语法
-- **Tailwind CSS**：原子化CSS框架
+## 📂 项目结构
 
-### 核心功能
-- **Markdown解析**：基于marked.js
-- **代码高亮**：基于Prism.js
-- **文件处理**：支持拖拽上传
-- **ZIP导出**：基于JSZip.js
+```
+📦 公众号排版工具
+├── 📄 index.html                    # 主页面文件
+├── 📄 公众号文章排版工具.html          # 工具主文件
+├── 📄 预设排版.json                  # 预设模板数据
+├── 📁 公众号文章排版工具_files/       # 静态资源文件
+├── 📄 README.md                     # 项目说明文档
+└── 📄 .gitignore                    # Git忽略文件
+```
 
-### 浏览器兼容
-- Chrome 70+
-- Firefox 65+
-- Safari 12+
-- Edge 79+
+## 🌟 特色亮点
 
-## 📱 预览图
+1. **零依赖部署** - 无需Node.js环境，直接部署到静态托管
+2. **离线可用** - 所有资源本地化，无需网络连接
+3. **数据安全** - 所有处理均在本地完成，不上传任何数据
+4. **极速加载** - 优化的资源结构，快速响应
+5. **跨平台** - 支持Windows、macOS、Linux等所有平台
 
-### 主界面
-- 极光背景 + 玻璃态设计
-- 四色主题编辑区
-- 实时预览功能
+## 🎯 使用场景
 
-### 样式设置
-- 全局样式配置
-- 标题段落自定义
-- 代码引用样式
-
-### 模板库
-- 80+内置模板
-- 模板预览功能
-- 一键应用切换
+- 📱 微信公众号文章排版
+- 📝 知乎、简书等平台内容发布
+- 💼 企业内容营销
+- 📖 个人博客文章美化
+- 📊 营销推广文案制作
 
 ## 🤝 贡献指南
 
-欢迎提交Issue和Pull Request！
+欢迎提交 Issue 和 Pull Request 来改进这个项目！
 
-### 开发规范
-- 代码风格：使用Prettier格式化
-- 提交信息：使用约定式提交格式
-- 功能开发：先提Issue讨论
+1. Fork 本仓库
+2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交你的修改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 打开一个 Pull Request
 
-### 本地开发
-```bash
-# 直接修改HTML文件
-# 推荐使用Live Server插件实时预览
-```
+## 📄 许可证
 
-## 📄 开源协议
-
-本项目采用 [MIT License](LICENSE) 开源协议。
-
-## 🙏 致谢
-
-- [Tailwind CSS](https://tailwindcss.com/) - 原子化CSS框架
-- [Marked.js](https://marked.js.org/) - Markdown解析器
-- [Prism.js](https://prismjs.com/) - 代码语法高亮
-- [JSZip](https://stuk.github.io/jszip/) - ZIP文件生成
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
 
 ## 📞 联系方式
 
-- 作者：四哥
-- 项目地址：[GitHub](https://github.com/your-username/wechat-article-formatter)
-- 在线演示：[Demo](https://your-username.github.io/wechat-article-formatter/)
+如有问题或建议，欢迎通过以下方式联系：
+
+- 🐛 [提交 Issue](https://github.com/你的用户名/仓库名/issues)
+- 💡 [功能建议](https://github.com/你的用户名/仓库名/discussions)
 
 ---
 
-⭐ 如果这个项目对您有帮助，请给个Star支持一下！ 
+⭐ 如果这个项目对你有帮助，请给个 Star 支持一下！ 
