@@ -1,0 +1,4587 @@
+{
+  "绿野仙踪": {
+    "type": "custom",
+    "description": "自然森林风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Noto Sans SC', 'PingFang SC', sans-serif",
+        "lineHeight": 1.85,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.3
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#2d6a4f",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='background:#d8f3dc;padding:12px 15px;border-radius:5px;border-left:5px solid #40916c;'><p style='color:#2d6a4f;font-size:18px;font-weight:bold;margin:0;'>{h2_text}<span style='float:right;font-size:16px;'>🍃</span></p></section></section>",
+          "templateName": "绿野仙踪标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#2d6a4f"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#2d6a4f",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#52b788",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#d8f3dc",
+          "borderColor": "#95d5b2"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#40916c",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#2d6a4f",
+        "inlineBgColor": "#d8f3dc",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#40916c",
+        "hrStyle": "solid",
+        "hrColor": "#b7e4c7"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;background:#d8f3dc;border-radius:5px;'><p style='color:#2d6a4f;'>🌿 感谢阅读 🌿</p><p style='color:#40916c;font-size:14px;margin-top:10px;'>欢迎点赞、收藏或分享</p></section>",
+          "templateName": "绿野仙踪底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "珊瑚礁": {
+    "type": "custom",
+    "description": "海洋珊瑚风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#ff8a5b",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='padding:10px 15px;background:linear-gradient(to right, #ffddd2, #ffd8be);border-radius:8px;'><p style='color:#c83e4d;font-size:18px;font-weight:bold;margin:0;'>{h2_text}</p></section><section style='height:6px;margin:0 30px;'><section style='height:100%;width:20px;float:left;background:#c83e4d;border-radius:0 0 0 10px;'></section><section style='height:100%;width:20px;float:right;background:#4d908e;border-radius:0 0 10px 0;'></section></section></section>",
+          "templateName": "珊瑚礁标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#c83e4d"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#c83e4d",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#4d908e",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f8edeb",
+          "borderColor": "#ffb4a2"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#c83e4d",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#c83e4d",
+        "inlineBgColor": "#f8edeb",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#4d908e",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;background:#f8edeb;border-radius:8px;'><p style='color:#c83e4d;'>🐚 文章结束 🐚</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "珊瑚礁底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "日出东方": {
+    "type": "custom",
+    "description": "东方日出风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Noto Serif SC', 'SimSun', serif",
+        "lineHeight": 1.9,
+        "letterSpacing": 0.04
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.3
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#333333",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='text-align:center;padding:5px 0;position:relative;'><section style='position:absolute;top:50%;left:0;right:0;height:1px;background:#d00000;'></section><p style='position:relative;display:inline-block;margin:0;background:#fff;padding:0 20px;color:#d00000;font-size:18px;font-weight:bold;font-family:\"Noto Serif SC\", \"SimSun\", serif;'>{h2_text}</p></section></section>",
+          "templateName": "日出东方标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#d00000"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#d00000",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#9d0208",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#fff0f3",
+          "borderColor": "#ffccd5"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#d00000",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#d00000",
+        "inlineBgColor": "#fff0f3",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#9d0208",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;'><section style='font-family:\"Noto Serif SC\", \"SimSun\", serif;color:#d00000;font-size:18px;'>完</section><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "日出东方底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "轻奢紫金": {
+    "type": "custom",
+    "description": "轻奢紫金风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#5a189a",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='background:#f8f9fa;padding:12px 15px;border-left:3px solid #7b2cbf;'><p style='font-size:18px;font-weight:bold;color:#5a189a;margin:0;'>{h2_text}<span style='float:right;font-size:12px;padding:2px 10px;background:#c77dff;color:#fff;border-radius:10px;'>LUXE</span></p></section></section>",
+          "templateName": "轻奢紫金标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#7b2cbf"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#7b2cbf",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#9d4edd",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f3f1f5",
+          "borderColor": "#e0c3fc"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#7b2cbf",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#7b2cbf",
+        "inlineBgColor": "#f3f1f5",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#7b2cbf",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;border-top:1px solid #e0c3fc;'><p style='color:#7b2cbf;text-transform:uppercase;letter-spacing:2px;font-size:14px;'>END</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "轻奢紫金底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "魔方拼接": {
+    "type": "custom",
+    "description": "魔方拼接风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#3d3d3d",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='display:flex;align-items:stretch;overflow:hidden;border-radius:3px;'><section style='display:flex;flex-direction:column;margin-right:10px;'><section style='width:20px;height:20px;background:#ec0868;margin-bottom:5px;'></section><section style='width:20px;height:20px;background:#7303c0;'></section></section><section style='background:#f5f5f5;flex:1;padding:12px 15px;'><p style='color:#3d3d3d;font-size:18px;font-weight:bold;margin:0;'>{h2_text}</p></section><section style='display:flex;flex-direction:column;margin-left:10px;'><section style='width:20px;height:20px;background:#03adfc;margin-bottom:5px;'></section><section style='width:20px;height:20px;background:#fdcd03;'></section></section></section></section>",
+          "templateName": "魔方拼接标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#3d3d3d"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "multiple",
+          "color": "#ec0868",
+          "colors": [
+            "#ec0868",
+            "#7303c0",
+            "#03adfc",
+            "#fdcd03"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#3d3d3d",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f5f5f5",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#ec0868",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#7303c0",
+        "inlineBgColor": "#f5f5f5",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#03adfc",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;background:#f5f5f5;'><section style='display:flex;justify-content:center;margin-bottom:10px;'><section style='width:20px;height:20px;background:#ec0868;margin:0 5px;'></section><section style='width:20px;height:20px;background:#7303c0;margin:0 5px;'></section><section style='width:20px;height:20px;background:#03adfc;margin:0 5px;'></section><section style='width:20px;height:20px;background:#fdcd03;margin:0 5px;'></section></section><p style='color:#3d3d3d;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "魔方拼接底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "纸质撕边": {
+    "type": "custom",
+    "description": "纸质撕边风格设计，适合创意、故事类文章",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#f87171",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='background:#f87171;padding:15px;color:#fff;'><p style='font-size:18px;margin:0;font-weight:bold;'>{h2_text}</p></section><section style='height:15px;overflow:hidden;position:relative;'><svg style='position:absolute;top:-2px;width:100%;height:20px;' viewBox='0 0 1200 30' preserveAspectRatio='none'><path fill='#f87171' d='M0,0 Q300,30 600,15 T1200,30 V0 H0Z'></path></svg></section></section>",
+          "templateName": "纸质撕边标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#f87171"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#f87171",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#ef4444",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#fee2e2",
+          "borderColor": "#fca5a5"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#f87171",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#f87171",
+        "inlineBgColor": "#fef2f2",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#f87171",
+        "hrStyle": "solid",
+        "hrColor": "#fca5a5"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;'><section style='height:15px;overflow:hidden;position:relative;'><svg style='position:absolute;bottom:-2px;width:100%;height:20px;' viewBox='0 0 1200 30' preserveAspectRatio='none'><path fill='#f87171' d='M0,30 Q300,0 600,15 T1200,0 V30 H0Z'></path></svg></section><section style='background:#f87171;padding:15px;text-align:center;'><p style='color:white;margin:0;font-weight:bold;'>故事未完，未完待续</p><p style='color:white;font-size:14px;margin-top:10px;opacity:0.9;'>分享是最好的鼓励，点赞是最暖的回应</p></section></section>",
+          "templateName": "纸质撕边底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-23T04:16:37.000Z"
+  },
+  "曲线音符": {
+    "type": "custom",
+    "description": "曲线音符风格设计，适合音乐、艺术类文章",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Noto Sans SC', 'PingFang SC', sans-serif",
+        "lineHeight": 1.85,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#374151",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#8b5cf6",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='display:flex;align-items:center;'><section style='flex:1;height:2px;background:linear-gradient(to right, transparent, #8b5cf6);'></section><section style='width:10px;height:10px;border-radius:50%;background:#8b5cf6;margin:0 5px;'></section><section style='width:6px;height:6px;border-radius:50%;background:#a78bfa;margin:0 5px;'></section><section style='padding:0 15px;'><p style='font-size:18px;color:#8b5cf6;margin:0;font-weight:bold;'>{h2_text}</p></section><section style='width:6px;height:6px;border-radius:50%;background:#a78bfa;margin:0 5px;'></section><section style='width:10px;height:10px;border-radius:50%;background:#8b5cf6;margin:0 5px;'></section><section style='flex:1;height:2px;background:linear-gradient(to left, transparent, #8b5cf6);'></section></section></section>",
+          "templateName": "曲线音符标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#8b5cf6"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#8b5cf6",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#a78bfa",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f5f3ff",
+          "borderColor": "#ddd6fe"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#8b5cf6",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#8b5cf6",
+        "inlineBgColor": "#f5f3ff",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#8b5cf6",
+        "hrStyle": "solid",
+        "hrColor": "#ddd6fe"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:0;'><section style='text-align:center;position:relative;padding:20px 0;'><section style='position:absolute;left:0;right:0;top:50%;height:2px;background:#f5f3ff;'></section><section style='position:relative;padding:0 20px;background:#fff;display:inline-block;'><section style='display:flex;align-items:center;'><section style='width:8px;height:8px;border-radius:50%;background:#8b5cf6;margin:0 5px;'></section><section style='width:5px;height:5px;border-radius:50%;background:#a78bfa;margin:0 5px;'></section><section style='width:8px;height:8px;border-radius:50%;background:#8b5cf6;margin:0 5px;'></section></section></section></section><section style='text-align:center;padding-bottom:15px;'><p style='margin:0;color:#8b5cf6;font-style:italic;'>♪ 余音袅袅 ♪</p><p style='color:#6b7280;font-size:14px;margin-top:5px;'>记得点赞分享，让美妙继续</p></section></section>",
+          "templateName": "曲线音符底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-23T04:20:17.000Z"
+  },
+  "几何积木": {
+    "type": "custom",
+    "description": "几何积木风格设计，适合教育、儿童类文章",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#374151",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#ef4444",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='display:flex;align-items:center;'><section style='width:30px;height:30px;background:#ef4444;border-radius:5px;transform:rotate(45deg);margin-right:20px;'></section><section style='flex:1;'><section style='background:#fecaca;padding:12px 15px;border-radius:5px;'><p style='font-size:18px;color:#ef4444;margin:0;font-weight:bold;'>{h2_text}</p></section></section><section style='width:20px;height:20px;background:#f87171;border-radius:4px;transform:rotate(45deg);margin-left:15px;'></section></section></section>",
+          "templateName": "几何积木标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#ef4444"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "multiple",
+          "color": "#ef4444",
+          "colors": [
+            "#ef4444",
+            "#f59e0b",
+            "#10b981",
+            "#3b82f6",
+            "#8b5cf6"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#f87171",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#fef2f2",
+          "borderColor": "#fee2e2"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#ef4444",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#ef4444",
+        "inlineBgColor": "#fef2f2",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#ef4444",
+        "hrStyle": "solid",
+        "hrColor": "#fee2e2"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;'><section style='display:inline-flex;align-items:center;'><section style='width:25px;height:25px;background:#3b82f6;border-radius:4px;transform:rotate(45deg);margin-right:10px;'></section><section style='width:25px;height:25px;background:#ef4444;border-radius:4px;margin-right:10px;'></section><section style='width:25px;height:25px;background:#f59e0b;border-radius:50%;margin-right:10px;'></section><section style='padding:10px 20px;background:#fecaca;border-radius:5px;'><p style='margin:0;color:#ef4444;font-weight:bold;'>积木拼完啦</p><p style='color:#374151;font-size:14px;margin-top:5px;'>喜欢就动动小手点个赞吧~</p></section><section style='width:25px;height:25px;background:#10b981;border-radius:50%;margin-left:10px;'></section><section style='width:25px;height:25px;background:#8b5cf6;border-radius:4px;margin-left:10px;'></section><section style='width:25px;height:25px;background:#06b6d4;border-radius:4px;transform:rotate(45deg);margin-left:10px;'></section></section></section>",
+          "templateName": "几何积木底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-23T04:48:34.000Z"
+  },
+  "复古摩登": {
+    "type": "custom",
+    "description": "复古摩登风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Georgia', 'Times New Roman', 'SimSun', serif",
+        "lineHeight": 1.85,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.3
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#774936",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='text-align:center;border:1px solid #774936;padding:15px;'><p style='margin:0;font-family:\"Georgia\", \"Times New Roman\", \"SimSun\", serif;font-size:18px;color:#774936;font-weight:normal;'>{h2_text}</p></section><section style='text-align:center;'><span style='display:inline-block;width:40px;height:40px;transform:rotate(45deg);border:1px solid #774936;margin-top:-20px;background:#fff;'></span></section></section>",
+          "templateName": "复古摩登标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#774936"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#774936",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#c99c72",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f9f5f1",
+          "borderColor": "#e6ccb2"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#774936",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#774936",
+        "inlineBgColor": "#f9f5f1",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#774936",
+        "hrStyle": "solid",
+        "hrColor": "#e6ccb2"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;padding:20px 0;border-top:1px solid #e6ccb2;border-bottom:1px solid #e6ccb2;'><p style='font-family:\"Georgia\", \"Times New Roman\", \"SimSun\", serif;color:#774936;'>THE END</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "复古摩登底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "优雅大理石": {
+    "type": "custom",
+    "description": "优雅大理石质感设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "##3c3c3c",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='background:#f1f1f1;padding:15px;'><p style='color:#3c3c3c;font-size:18px;font-weight:bold;margin:0;text-align:center;'>{h2_text}</p></section><section style='height:2px;background:#cca43b;width:100px;margin:0 auto;'></section></section>",
+          "templateName": "优雅大理石标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#3c3c3c"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#cca43b",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#3c3c3c",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f8f8f8",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#cca43b",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#cca43b",
+        "inlineBgColor": "#f8f8f8",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#cca43b",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;border-top:1px solid #e0e0e0;'><p style='color:#cca43b;text-transform:uppercase;letter-spacing:2px;font-size:14px;'>END</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "优雅大理石底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "极简黑白": {
+    "type": "custom",
+    "description": "极简黑白风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.015
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#2a2a2a",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#000000",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='padding:0 15px;'><section style='padding:12px 0;border-top:2px solid #000;border-bottom:2px solid #000;'><p style='font-size:18px;color:#000;margin:0;font-weight:bold;text-transform:uppercase;letter-spacing:1px;'>{h2_text}</p></section></section></section>",
+          "templateName": "极简黑白标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#000000"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#000000",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#5a5a5a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#2a2a2a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f6f6f6",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#2a2a2a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#000000",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#000000",
+        "inlineBgColor": "#f6f6f6",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#000000",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:20px 0;text-align:center;border-top:2px solid #000;'><p style='color:#000;text-transform:uppercase;letter-spacing:2px;font-size:14px;margin:0;'>THE END</p><p style='color:#5a5a5a;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "极简黑白底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:55:51.130Z"
+  },
+  "热带风情": {
+    "type": "custom",
+    "description": "热带风情风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#ff6b35",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='background:#f7ede2;padding:12px 15px;border-radius:10px;border-left:5px solid #ff6b35;'><p style='color:#ff6b35;font-size:18px;font-weight:bold;margin:0;'>{h2_text}<span style='float:right;font-size:16px;'>🌴</span></p></section></section>",
+          "templateName": "热带风情标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#ff6b35"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#ff6b35",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#f7b267",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f7ede2",
+          "borderColor": "#f7cb9f"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#ff6b35",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#ff6b35",
+        "inlineBgColor": "#f7ede2",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#f7b267",
+        "hrStyle": "solid",
+        "hrColor": "#f7cb9f"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;background:#f7ede2;border-radius:10px;'><p style='color:#ff6b35;'>☀ 结束 ☀</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "热带风情底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "活力跳跃": {
+    "type": "custom",
+    "description": "活力跳跃风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#ff3838",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='display:flex;align-items:center;'><section style='width:8px;height:30px;background:#ff3838;border-radius:4px;margin-right:10px;'></section><section style='width:5px;height:20px;background:#0097e6;border-radius:4px;margin-right:15px;'></section><p style='color:#ff3838;font-size:18px;font-weight:bold;margin:0;'>{h2_text}</p></section></section>",
+          "templateName": "活力跳跃标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#ff3838"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#ff3838",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#0097e6",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f1f9fc",
+          "borderColor": "#c7ecee"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#ff3838",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#ff3838",
+        "inlineBgColor": "#f1f9fc",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#0097e6",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;'><section style='display:flex;justify-content:center;margin-bottom:10px;'><section style='width:8px;height:30px;background:#ff3838;border-radius:4px;'></section><section style='width:8px;height:20px;background:#0097e6;border-radius:4px;margin:0 10px;margin-top:10px;'></section><section style='width:8px;height:15px;background:#fbc531;border-radius:4px;margin-top:15px;'></section></section><p style='color:#333;font-size:14px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "活力跳跃底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "简约商务": {
+    "type": "custom",
+    "description": "简约商务风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#222831",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='border-left:3px solid #00adb5;padding-left:12px;'><p style='color:#222831;font-size:18px;font-weight:bold;margin:0;'>{h2_text}</p></section></section>",
+          "templateName": "简约商务标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#222831"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#00adb5",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#393e46",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f5f5f5",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#00adb5",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#00adb5",
+        "inlineBgColor": "#f5f5f5",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#00adb5",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;border-top:1px solid #e0e0e0;'><p style='color:#222831;letter-spacing:1px;text-transform:uppercase;font-size:14px;'>END</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "简约商务底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "纸张笔记": {
+    "type": "custom",
+    "description": "纸张笔记风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#333333",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='background:#fffdf7;padding:15px;border:1px solid #ccc;border-left:5px solid #fb8b24;'><p style='color:#333;font-size:18px;font-weight:bold;margin:0;'>{h2_text}</p></section></section>",
+          "templateName": "纸张笔记标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#c26401"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#c26401",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#fb8b24",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#fffdf7",
+          "borderColor": "#e4dcca"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#c26401",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#c26401",
+        "inlineBgColor": "#fffdf7",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#fb8b24",
+        "hrStyle": "dashed",
+        "hrColor": "#e4dcca"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;border-top:1px dashed #e4dcca;'><p style='color:#c26401;'>✎ NOTES END ✎</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "纸张笔记底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "墨迹飞扬": {
+    "type": "custom",
+    "description": "墨迹飞扬风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Noto Serif SC', 'STSong', serif",
+        "lineHeight": 1.9,
+        "letterSpacing": 0.04
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.3
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#2d3436",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='border-bottom:2px solid #2d3436;padding-bottom:8px;'><p style='font-family:\"Noto Serif SC\", \"STSong\", serif;font-size:18px;color:#2d3436;margin:0;'>{h2_text}</p></section></section>",
+          "templateName": "墨迹飞扬标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#2d3436"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#2d3436",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#636e72",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f5f5f5",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#2d3436",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#2d3436",
+        "inlineBgColor": "#f5f5f5",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#2d3436",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;padding:15px 0;border-top:2px solid #2d3436;'><p style='font-family:\"Noto Serif SC\", \"STSong\", serif;color:#2d3436;'>完</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "墨迹飞扬底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "点线面": {
+    "type": "custom",
+    "description": "点线面风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#364f6b",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='display:flex;align-items:center;'><section style='width:10px;height:10px;border-radius:50%;background:#364f6b;margin-right:10px;'></section><section style='flex:1;height:1px;background:#364f6b;'></section></section><section style='padding:10px 0 0 20px;'><p style='font-size:18px;font-weight:bold;color:#364f6b;margin:0;'>{h2_text}</p></section></section>",
+          "templateName": "点线面标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#364f6b"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#364f6b",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#3fc1c9",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f5f5f5",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#364f6b",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#364f6b",
+        "inlineBgColor": "#f5f5f5",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#3fc1c9",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;'><section style='display:flex;align-items:center;justify-content:center;margin-bottom:15px;'><section style='width:30px;height:1px;background:#364f6b;'></section><section style='width:10px;height:10px;border-radius:50%;background:#364f6b;margin:0 5px;'></section><section style='width:30px;height:1px;background:#364f6b;'></section></section><p style='color:#333;font-size:14px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "点线面底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "暖阳盛夏": {
+    "type": "custom",
+    "description": "暖阳盛夏风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#ff9f1c",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='background:#fff9ec;padding:15px;border-radius:8px;border-left:5px solid #ff9f1c;'><p style='color:#ff9f1c;font-size:18px;font-weight:bold;margin:0;'>{h2_text}<span style='float:right;font-size:18px;'>☀</span></p></section></section>",
+          "templateName": "暖阳盛夏标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#ff9f1c"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#ff9f1c",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#f48c06",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#fff9ec",
+          "borderColor": "#ffe8c2"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#ff9f1c",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#ff9f1c",
+        "inlineBgColor": "#fff9ec",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#f48c06",
+        "hrStyle": "solid",
+        "hrColor": "#ffe8c2"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;background:#fff9ec;border-radius:8px;'><p style='color:#ff9f1c;'>☀ 阳光正好 ☀</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "暖阳盛夏底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "灰度时尚": {
+    "type": "custom",
+    "description": "灰度时尚风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#2b2b2b",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='padding-bottom:8px;border-bottom:3px solid #2b2b2b;'><p style='color:#2b2b2b;font-size:18px;font-weight:bold;margin:0;text-transform:uppercase;letter-spacing:1px;'>{h2_text}</p></section></section>",
+          "templateName": "灰度时尚标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#2b2b2b"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#2b2b2b",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#666666",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f5f5f5",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#2b2b2b",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#2b2b2b",
+        "inlineBgColor": "#f5f5f5",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#2b2b2b",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:20px 0;text-align:center;border-top:3px solid #2b2b2b;'><p style='color:#2b2b2b;letter-spacing:3px;text-transform:uppercase;font-size:14px;'>THE END</p><p style='color:#666;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "灰度时尚底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "商务蓝调": {
+    "type": "custom",
+    "description": "商务蓝调风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#0353a4",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='border-left:5px solid #0353a4;padding-left:15px;'><p style='color:#0353a4;font-size:18px;font-weight:bold;margin:0;'>{h2_text}</p></section></section>",
+          "templateName": "商务蓝调标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#0353a4"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#0353a4",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#0466c8",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f0f7ff",
+          "borderColor": "#c1d3fe"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#0353a4",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#0353a4",
+        "inlineBgColor": "#f0f7ff",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#0466c8",
+        "hrStyle": "solid",
+        "hrColor": "#c1d3fe"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;background:#f0f7ff;'><p style='color:#0353a4;letter-spacing:1px;'>DOCUMENT END</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "商务蓝调底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "斜线条纹": {
+    "type": "custom",
+    "description": "斜线条纹风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#ef476f",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='background:#f8ecef;padding:15px;border-left:5px solid #ef476f;'><p style='color:#ef476f;font-size:18px;font-weight:bold;margin:0;'>{h2_text}</p></section><section style='height:5px;background:repeating-linear-gradient(45deg, #ef476f, #ef476f 10px, #f8ecef 10px, #f8ecef 20px);'></section></section>",
+          "templateName": "斜线条纹标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#ef476f"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#ef476f",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#118ab2",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f8ecef",
+          "borderColor": "#f3bbc7"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#ef476f",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#ef476f",
+        "inlineBgColor": "#f8ecef",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#118ab2",
+        "hrStyle": "solid",
+        "hrColor": "#f3bbc7"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;background:#f8ecef;'><p style='color:#ef476f;'>● THE END ●</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "斜线条纹底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:54:12.759Z"
+  },
+  "霓虹追光": {
+    "type": "custom",
+    "description": "赛博朋克风格设计，适合科技和未来主题",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#272932",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#272932",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='background:#272932;padding:12px 15px;border:1px solid #34e4ea;'><p style='color:#34e4ea;font-size:18px;font-weight:bold;margin:0;font-family:monospace;text-shadow:0 0 5px rgba(52,228,234,0.6);'>{h2_text}<span style='float:right;font-size:12px;'>NEON</span></p></section><section style='height:3px;background:linear-gradient(to right, #34e4ea, #e534eb);'></section></section>",
+          "templateName": "霓虹追光标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#e534eb"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "multiple",
+          "color": "#e534eb",
+          "colors": [
+            "#e534eb",
+            "#34e4ea",
+            "#ea3473"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#34e4ea",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#272932",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f0feff",
+          "borderColor": "#b3f8fa"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#272932",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#e534eb",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#34e4ea",
+        "inlineBgColor": "#0d1117",
+        "blockTheme": "okaidia"
+      },
+      "other": {
+        "linkColor": "#34e4ea",
+        "hrStyle": "solid",
+        "hrColor": "#34e4ea"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;background:#272932;color:#fff;'><p style='font-family:monospace;color:#34e4ea;text-shadow:0 0 5px rgba(52,228,234,0.6);font-size:14px;letter-spacing:2px;'>SYSTEM SHUTDOWN</p><p style='color:#fff;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "霓虹追光底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:55:40.437Z"
+  },
+  "商务图表": {
+    "type": "custom",
+    "description": "商务图表风格设计，适合商业和数据内容",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#2b2d42",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='position:relative;'><section style='height:30px;display:flex;'><section style='flex:2;background:#8d99ae;'></section><section style='flex:1.5;background:#2b2d42;'></section><section style='flex:1;background:#ef233c;'></section><section style='flex:0.8;background:#d90429;'></section></section><section style='padding:15px;border:1px solid #e0e0e0;border-top:none;'><p style='color:#2b2d42;font-size:18px;font-weight:bold;margin:0;'>{h2_text}<span style='float:right;color:#d90429;font-family:monospace;font-size:12px;background:#f8f9fa;padding:2px 8px;border-radius:3px;'>DATA</span></p></section></section></section>",
+          "templateName": "商务图表标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#2b2d42"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "multiple",
+          "color": "#2b2d42",
+          "colors": [
+            "#2b2d42",
+            "#d90429",
+            "#8d99ae"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#d90429",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f8f9fa",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#2b2d42",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#2b2d42",
+        "inlineBgColor": "#f8f9fa",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#d90429",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:20px 15px;text-align:center;background:#f8f9fa;border:1px solid #e0e0e0;position:relative;'><section style='position:absolute;top:0;left:0;right:0;height:5px;display:flex;'><section style='flex:0.8;background:#d90429;'></section><section style='flex:1;background:#ef233c;'></section><section style='flex:1.5;background:#2b2d42;'></section><section style='flex:2;background:#8d99ae;'></section></section><p style='color:#2b2d42;font-weight:bold;margin-top:15px;'>REPORT COMPLETE</p><p style='color:#333;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "商务图表底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:55:44.643Z"
+  },
+  "彩虹派对": {
+    "type": "custom",
+    "description": "彩虹派对风格设计，适合欢快和庆祝内容",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#9b5de5",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='background:linear-gradient(45deg, #ff7aa2, #9b5de5, #00d4ff);padding:2px;border-radius:10px;'><section style='background:#ffffff;border-radius:8px;padding:15px;text-align:center;'><p style='font-size:18px;font-weight:bold;margin:0;background:linear-gradient(45deg, #ff7aa2, #9b5de5, #00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;'>{h2_text}</p></section></section></section>",
+          "templateName": "彩虹派对标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#9b5de5"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "multiple",
+          "color": "#9b5de5",
+          "colors": [
+            "#9b5de5",
+            "#ff7aa2",
+            "#00d4ff",
+            "#00f5d4",
+            "#fee440"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#ff7aa2",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f9f4ff",
+          "borderColor": "#dbc9f2"
+        },
+        "list": {
+          "colorMode": "multiple",
+          "color": "#333333",
+          "colors": [
+            "#333333"
+          ],
+          "randomColors": [
+            "#9b5de5",
+            "#ff7aa2",
+            "#00d4ff",
+            "#00f5d4",
+            "#fee440"
+          ],
+          "randomCount": 5,
+          "markerColor": "#9b5de5",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#9b5de5",
+        "inlineBgColor": "#f9f4ff",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#9b5de5",
+        "hrStyle": "solid",
+        "hrColor": "#dbc9f2"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;background:linear-gradient(45deg, #ff7aa2, #9b5de5, #00d4ff);color:#fff;border-radius:10px;'><p style='font-weight:bold;'>🎉 PARTY TIME 🎉</p><p style='color:#fff;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "彩虹派对底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:55:44.643Z"
+  },
+  "几何方块": {
+    "type": "custom",
+    "description": "几何方块风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'HarmonyOS Sans SC', 'PingFang SC', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#2a2a2a",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#1e4258",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='display:flex;align-items:stretch;'><section style='width:20px;background:#1e4258;display:flex;flex-direction:column;'><section style='flex:1;'></section><section style='height:20px;background:#4f9da6;'></section></section><section style='flex:1;padding:12px 15px;border-top:1px solid #1e4258;border-bottom:1px solid #1e4258;border-right:1px solid #1e4258;'><p style='font-size:18px;color:#1e4258;margin:0;font-weight:bold;'>{h2_text}</p></section></section></section>",
+          "templateName": "几何方块标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#1e4258"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#1e4258",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#4f9da6",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#2a2a2a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f5f9fa",
+          "borderColor": "#aadce0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#2a2a2a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#1e4258",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#1e4258",
+        "inlineBgColor": "#f5f9fa",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#4f9da6",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:20px;text-align:center;border-top:1px solid #e0e0e0;'><section style='display:inline-block;'><section style='display:inline-block;width:12px;height:12px;background:#1e4258;margin-right:3px;'></section><section style='display:inline-block;width:12px;height:12px;background:#4f9da6;margin-right:3px;'></section><section style='display:inline-block;width:12px;height:12px;background:#1e4258;'></section></section><p style='color:#2a2a2a;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "几何方块底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:55:51.130Z"
+  },
+  "荧光效果": {
+    "type": "custom",
+    "description": "荧光效果风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.025
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#2c2c2c",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#9900f0",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='background:#f4f4f4;padding:15px;border-radius:5px;border-bottom:3px solid #9900f0;'><p style='font-size:18px;color:#111111;margin:0;font-weight:bold;background:linear-gradient(160deg, #9900f0, #ff85a2);-webkit-background-clip:text;color:transparent;text-shadow:0 0 10px rgba(153,0,240,0.2);'>{h2_text}</p></section></section>",
+          "templateName": "荧光效果标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#9900f0"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#9900f0",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#ff85a2",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#2c2c2c",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f4f4f4",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#2c2c2c",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#9900f0",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#9900f0",
+        "inlineBgColor": "#f4f4f4",
+        "blockTheme": "okaidia"
+      },
+      "other": {
+        "linkColor": "#9900f0",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:20px;text-align:center;background:#f4f4f4;border-radius:5px;'><p style='color:#9900f0;margin:0;'>◆ END ◆</p><p style='color:#2c2c2c;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "荧光效果底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:55:54.058Z"
+  },
+  "新闻日报": {
+    "type": "custom",
+    "description": "新闻日报风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Georgia', 'Times New Roman', 'SimSun', serif",
+        "lineHeight": 1.85,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#2a2a2a",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.3
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#a00000",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='display:flex;align-items:center;'><section style='background:#a00000;color:#fff;font-size:12px;font-weight:bold;padding:3px 10px;text-transform:uppercase;display:inline-block;'>NEWS</section><section style='flex:1;padding-left:15px;border-bottom:2px solid #a00000;'><p style='font-size:18px;color:#2a2a2a;margin:0;font-family:\"Georgia\", \"Times New Roman\", \"SimSun\", serif;'>{h2_text}</p></section></section></section>",
+          "templateName": "新闻日报标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#a00000"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#a00000",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#5a5a5a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#2a2a2a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f8f8f8",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#2a2a2a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#a00000",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#a00000",
+        "inlineBgColor": "#f8f8f8",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#a00000",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px 0;text-align:center;border-top:2px solid #a00000;'><p style='font-family:\"Georgia\", \"Times New Roman\", \"SimSun\", serif;color:#a00000;margin:0;font-style:italic;'>- End of Article -</p><p style='color:#5a5a5a;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "新闻日报底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:55:56.146Z"
+  },
+  "简约摩登": {
+    "type": "custom",
+    "description": "简约摩登风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#262626",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#262626",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='display:flex;align-items:center;'><section style='width:15px;height:15px;background:#000000;'></section><section style='width:30px;height:1px;background:#000000;margin:0 10px;'></section><section style='flex:1;'><p style='font-size:18px;color:#262626;margin:0;font-weight:bold;'>{h2_text}</p></section></section></section>",
+          "templateName": "简约摩登标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#262626"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#000000",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#525252",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#262626",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f9f9f9",
+          "borderColor": "#e5e5e5"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#262626",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#000000",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#000000",
+        "inlineBgColor": "#f9f9f9",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#000000",
+        "hrStyle": "solid",
+        "hrColor": "#e5e5e5"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:20px 0;text-align:center;border-top:1px solid #e5e5e5;'><section style='display:inline-block;width:15px;height:1px;background:#000000;'></section><section style='display:inline-block;width:15px;height:1px;background:#000000;transform:rotate(90deg);'></section><p style='color:#525252;font-size:14px;margin-top:15px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "简约摩登底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:55:56.146Z"
+  },
+  "墨滴双色重影多彩": {
+    "type": "custom",
+    "description": "",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "-apple-system-font, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei UI', 'Microsoft YaHei', Arial, sans-serif",
+        "lineHeight": 1.85,
+        "letterSpacing": 0.08
+      },
+      "paragraph": {
+        "fontSize": 17,
+        "colorMode": "multiple",
+        "color": "#333333",
+        "colors": [
+          "#e74c3c",
+          "#3498db",
+          "#2ecc71",
+          "#f39c12",
+          "#9b59b6"
+        ],
+        "randomColors": [],
+        "randomCount": 5,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 26,
+          "color": "#e74c3c",
+          "bgColor": "transparent",
+          "border": true
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section id=\"nice\" data-tool=\"mdnice编辑器\" data-website=\"https://www.mdnice.com\" style=\"padding: 0px 10px; background-attachment: scroll; background-clip: border-box; background-image: none; background-origin: padding-box; background-position: 0% 0%; background-repeat: no-repeat; background-size: auto; width: auto; font-family: Optima, &quot;Microsoft YaHei&quot;, PingFangSC-regular, serif; font-size: 16px; color: rgb(0, 0, 0); line-height: 1.5em; word-spacing: 0em; letter-spacing: 0em; word-break: break-word; text-align: left;\" class=\"\">\r\n    <h2 data-tool=\"mdnice编辑器\" style=\"margin: 30px auto 15px; background-attachment: scroll; background-clip: border-box; background-image: linear-gradient(to left, rgb(253, 213, 231), rgb(194, 226, 249)); background-origin: padding-box; background-position: 0% 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto; align-items: unset; border-style: solid; border-width: 1px; border-color: rgb(62, 62, 62); border-radius: 0px; box-shadow: none; display: table; flex-direction: unset; float: unset; justify-content: unset; line-height: 1.5em; overflow: unset; position: relative; text-shadow: none; transform: none; -webkit-box-reflect: unset;\">\r\n        <span class=\"prefix\" style=\"display: none;\"></span><span class=\"content\" style=\"font-size: 18px; line-height: 1.5em; letter-spacing: 0em; padding: 10px; align-items: unset; background-attachment: scroll; background-clip: border-box; background-image: none; background-origin: padding-box; background-position: 0% 0%; background-repeat: no-repeat; background-size: auto; border-style: solid; border-width: 1px; border-color: #000000; border-radius: 0px; box-shadow: none; display: block; font-weight: bold; flex-direction: unset; float: unset; height: auto; justify-content: unset; overflow: unset; position: relative; text-indent: 0em; text-shadow: none; transform: translate3d(-5px, -5px, 0px); width: auto; -webkit-box-reflect: unset;\">{h2_text}</span>\r\n    </h2>",
+          "templateName": "墨滴双色重影.html",
+          "fontSize": 22,
+          "color": "#3498db",
+          "borderColor": "#3498db"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#2ecc71"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "multiple",
+          "color": "#e74c3c",
+          "colors": [
+            "#e74c3c",
+            "#3498db",
+            "#2ecc71",
+            "#f39c12",
+            "#9b59b6"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#ffffff",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "multiple",
+          "color": "#9b59b6",
+          "colors": [
+            "#9b59b6",
+            "#f39c12",
+            "#e74c3c"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#555555",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f9f9f9",
+          "borderColor": "#f39c12"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#3498db",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#e74c3c",
+        "inlineBgColor": "#fff3f0",
+        "blockTheme": "okaidia"
+      },
+      "other": {
+        "linkColor": "#3498db",
+        "hrStyle": "dashed",
+        "hrColor": "#ecf0f1"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "请点赞、点在看、点收藏",
+          "templateName": "标准底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-13T06:22:43.878Z"
+  },
+  "蓝调纸张": {
+    "type": "custom",
+    "description": "蓝调风纸张风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Noto Sans SC', 'PingFang SC', sans-serif",
+        "lineHeight": 1.85,
+        "letterSpacing": 0.025
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#1f2937",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#1e40af",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='border:1px solid #93c5fd;background:#eff6ff;position:relative;'><section style='position:absolute;top:-1px;left:20px;right:20px;height:1px;background:#eff6ff;'></section><section style='width:120px;height:1px;background:#1e40af;margin:0 auto;'></section><section style='padding:20px 15px 15px;'><p style='font-size:18px;color:#1e40af;margin:0;font-weight:bold;text-align:center;'>{h2_text}</p></section></section></section>",
+          "templateName": "蓝调纸张标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#1e40af"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#1e40af",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#3b82f6",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#1f2937",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#eff6ff",
+          "borderColor": "#bfdbfe"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#1f2937",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#1e40af",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#1e40af",
+        "inlineBgColor": "#eff6ff",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#3b82f6",
+        "hrStyle": "solid",
+        "hrColor": "#bfdbfe"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;border:1px solid #bfdbfe;background:#eff6ff;'><p style='color:#1e40af;margin:0;font-weight:bold;'>THE END</p><p style='color:#3b82f6;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "蓝调纸张底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:34:51.431Z"
+  },
+  "典雅大气": {
+    "type": "custom",
+    "description": "商务典雅风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Georgia', 'Times New Roman', 'SimSun', serif",
+        "lineHeight": 1.85,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#2a2a2a",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.3
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#1a1a1a",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:25px 0 15px;'><section style='display:flex;align-items:center;'><section style='width:40px;height:2px;background:#1a1a1a;'></section><section style='padding:0 15px;'><p style='font-size:20px;color:#1a1a1a;margin:0;font-weight:bold;font-family:\"Georgia\", \"Times New Roman\", \"SimSun\", serif;'>{h2_text}</p></section><section style='flex:1;height:2px;background:#1a1a1a;'></section></section></section>",
+          "templateName": "典雅大气标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#1a1a1a"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#1a1a1a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#666666",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#2a2a2a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f8f8f8",
+          "borderColor": "#e0e0e0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#2a2a2a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#1a1a1a",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#1a1a1a",
+        "inlineBgColor": "#f8f8f8",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#1a1a1a",
+        "hrStyle": "solid",
+        "hrColor": "#e0e0e0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;padding:20px 0;border-top:2px solid #e0e0e0;'><p style='font-family:\"Georgia\", \"Times New Roman\", \"SimSun\", serif;color:#1a1a1a;margin:0;font-style:italic;font-weight:bold;'>- THE END -</p><p style='color:#666666;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "典雅大气底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:34:51.431Z"
+  },
+  "文艺扁平": {
+    "type": "custom",
+    "description": "扁平化文艺风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Noto Serif SC', 'STSong', serif",
+        "lineHeight": 1.9,
+        "letterSpacing": 0.03
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#434343",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.3
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#434343",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;text-align:center;'><section style='display:inline-block;padding:0 20px;'><section style='width:100%;height:8px;background:#f0f0f0;border-radius:4px;margin-bottom:8px;position:relative;'><section style='position:absolute;width:30%;height:8px;background:#ec4899;left:0;top:0;border-radius:4px;'></section></section><p style='font-size:19px;color:#434343;margin:0;font-weight:normal;font-family:\"Noto Serif SC\", \"STSong\", serif;'>{h2_text}</p></section></section>",
+          "templateName": "文艺扁平标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#ec4899"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#ec4899",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#db2777",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#434343",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#fdf2f8",
+          "borderColor": "#fbcfe8"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#434343",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#ec4899",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#ec4899",
+        "inlineBgColor": "#fdf2f8",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#ec4899",
+        "hrStyle": "solid",
+        "hrColor": "#f0f0f0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;padding:15px 0;border-top:1px solid #f0f0f0;'><p style='font-family:\"Noto Serif SC\", \"STSong\", serif;color:#ec4899;margin:0;'>- 全文完 -</p><p style='color:#737373;font-size:14px;margin-top:10px;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "文艺扁平底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:34:51.431Z"
+  },
+  "拼贴马赛克": {
+    "type": "custom",
+    "description": "拼贴马赛克风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#3f3f46",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#3f3f46",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='position:relative;'><section style='display:flex;'><section style='width:25px;height:25px;background:#ef4444;'></section><section style='width:25px;height:25px;background:#f97316;'></section><section style='width:25px;height:25px;background:#f59e0b;'></section><section style='width:25px;height:25px;background:#84cc16;'></section><section style='width:25px;height:25px;background:#10b981;'></section><section style='width:25px;height:25px;background:#06b6d4;'></section><section style='width:25px;height:25px;background:#3b82f6;'></section><section style='width:25px;height:25px;background:#8b5cf6;'></section></section><section style='background:#f4f4f5;padding:15px;'><p style='font-size:18px;color:#3f3f46;margin:0;font-weight:bold;'>{h2_text}</p></section></section></section>",
+          "templateName": "拼贴马赛克标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#3f3f46"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "multiple",
+          "color": "#3f3f46",
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#84cc16",
+            "#10b981",
+            "#06b6d4",
+            "#3b82f6",
+            "#8b5cf6"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#71717a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#3f3f46",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f4f4f5",
+          "borderColor": "#e4e4e7"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#3f3f46",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#3f3f46",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#3f3f46",
+        "inlineBgColor": "#f4f4f5",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#3b82f6",
+        "hrStyle": "solid",
+        "hrColor": "#e4e4e7"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;padding:15px;text-align:center;background:#f4f4f5;'><section style='display:flex;justify-content:center;margin-bottom:10px;'><section style='width:15px;height:15px;background:#ef4444;'></section><section style='width:15px;height:15px;background:#f97316;'></section><section style='width:15px;height:15px;background:#f59e0b;'></section><section style='width:15px;height:15px;background:#84cc16;'></section><section style='width:15px;height:15px;background:#10b981;'></section><section style='width:15px;height:15px;background:#06b6d4;'></section><section style='width:15px;height:15px;background:#3b82f6;'></section><section style='width:15px;height:15px;background:#8b5cf6;'></section></section><p style='color:#3f3f46;font-size:14px;margin:0;'>感谢阅读，欢迎点赞、收藏或分享</p></section>",
+          "templateName": "拼贴马赛克底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-21T02:34:51.431Z"
+  },
+  "极简碰撞": {
+    "type": "custom",
+    "description": "极简主义设计与鲜明色彩的碰撞，强调留白和对比",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'DM Sans', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.025
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "multiple",
+        "color": "#111827",
+        "colors": [
+          "#111827",
+          "#1F2937",
+          "#374151"
+        ],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.3
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#111827",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:40px 0 25px;'><section style='display:flex;align-items:flex-start;'><section style='width:40px;height:40px;background:#F43F5E;flex-shrink:0;border-radius:50%;'></section><section style='flex:1;padding-left:20px;position:relative;'><section style='height:1px;background:linear-gradient(to right, #F43F5E, transparent);position:absolute;top:20px;left:0;right:0;'></section><p style='font-size:19px;color:#111827;margin:30px 0 0;font-weight:700;'>{h2_text}</p></section></section></section>",
+          "templateName": "极简碰撞标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#F43F5E"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "multiple",
+          "color": "#F43F5E",
+          "colors": [
+            "#F43F5E",
+            "#E11D48",
+            "#FB7185"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "multiple",
+          "color": "#6D28D9",
+          "colors": [
+            "#6D28D9",
+            "#8B5CF6",
+            "#7C3AED"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#111827",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#F9FAFB",
+          "borderColor": "#F3F4F6"
+        },
+        "list": {
+          "colorMode": "multiple",
+          "color": "#111827",
+          "colors": [
+            "#111827",
+            "#1F2937",
+            "#374151"
+          ],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#F43F5E",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#F43F5E",
+        "inlineBgColor": "#FFF1F2",
+        "blockTheme": "github"
+      },
+      "other": {
+        "linkColor": "#F43F5E",
+        "hrStyle": "solid",
+        "hrColor": "#F3F4F6"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:50px;'><section style='display:flex;flex-direction:column;align-items:center;'><section style='width:1px;height:40px;background:linear-gradient(to bottom, #F43F5E, transparent);'></section><section style='width:80px;height:80px;background:#F9FAFB;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:20px 0;'><section style='width:40px;height:40px;background:#F43F5E;border-radius:50%;'></section></section><p style='text-align:center;color:#111827;margin:0;font-weight:500;font-size:16px;'>简约至上</p><p style='text-align:center;color:#6B7280;font-size:14px;margin-top:8px;'>点赞是留白中最美的一笔</p></section></section>",
+          "templateName": "极简碰撞底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-24T15:43:39.000Z"
+  },
+  "渐变光影": {
+    "type": "custom",
+    "description": "渐变光影风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.85,
+        "letterSpacing": 0.025
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "random",
+        "color": "#374151",
+        "colors": [
+          "#3b82f6",
+          "#8b5cf6",
+          "#ec4899",
+          "#f97316",
+          "#10b981"
+        ],
+        "randomColors": [
+          "#3b82f6",
+          "#8b5cf6",
+          "#ec4899",
+          "#f97316",
+          "#10b981"
+        ],
+        "randomCount": 5,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#3b82f6",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='background:linear-gradient(45deg, #3b82f6, #8b5cf6);padding:10px 15px;border-radius:6px;display:inline-block;box-shadow:0 3px 10px rgba(59, 130, 246, 0.2);'><p style='font-size:16px;color:#ffffff;margin:0;font-weight:600;'>{h2_text}</p></section></section>",
+          "templateName": "渐变光影标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#3b82f6"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "random",
+          "color": "#3b82f6",
+          "colors": [
+            "#3b82f6",
+            "#8b5cf6",
+            "#ec4899",
+            "#f97316",
+            "#10b981"
+          ],
+          "randomColors": [
+            "#3b82f6",
+            "#8b5cf6",
+            "#ec4899",
+            "#f97316",
+            "#10b981"
+          ],
+          "randomCount": 5,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "random",
+          "color": "#60a5fa",
+          "colors": [
+            "#60a5fa",
+            "#a78bfa",
+            "#f472b6",
+            "#fb923c",
+            "#34d399"
+          ],
+          "randomColors": [
+            "#60a5fa",
+            "#a78bfa",
+            "#f472b6",
+            "#fb923c",
+            "#34d399"
+          ],
+          "randomCount": 5,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f0f9ff",
+          "borderColor": "#bae6fd"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#3b82f6",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#3b82f6",
+        "inlineBgColor": "#f0f9ff",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#3b82f6",
+        "hrStyle": "solid",
+        "hrColor": "#bae6fd"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;'><section style='background:linear-gradient(45deg, #3b82f6, #8b5cf6);padding:10px 15px;border-radius:20px;display:inline-block;box-shadow:0 3px 10px rgba(59, 130, 246, 0.2);'><p style='color:#ffffff;margin:0;font-size:14px;'>文字有温度，点赞有态度 ✨</p></section></section>",
+          "templateName": "渐变光影底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-30T07:44:55.370Z"
+  },
+  "动态波浪": {
+    "type": "custom",
+    "description": "动态波浪风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Noto Sans SC', 'PingFang SC', sans-serif",
+        "lineHeight": 1.85,
+        "letterSpacing": 0.025
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#374151",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#06b6d4",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='position:relative;background:#06b6d4;padding:10px 15px;border-radius:6px;display:inline-block;overflow:hidden;'><section style='position:absolute;top:0;left:0;right:0;bottom:0;'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none' style='position:absolute;bottom:0;width:100%;height:50px;'><path d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='#ffffff' opacity='0.2'></path><path d='M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z' fill='#ffffff' opacity='0.15'></path><path d='M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z' fill='#ffffff' opacity='0.1'></path></svg></section><p style='font-size:16px;color:#ffffff;margin:0;font-weight:600;position:relative;z-index:1;'>{h2_text}</p></section></section>",
+          "templateName": "动态波浪标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#06b6d4"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#06b6d4",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#22d3ee",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#ecfeff",
+          "borderColor": "#a5f3fc"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#06b6d4",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#06b6d4",
+        "inlineBgColor": "#ecfeff",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#06b6d4",
+        "hrStyle": "solid",
+        "hrColor": "#a5f3fc"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;'><section style='position:relative;background:#06b6d4;padding:10px 20px;border-radius:6px;display:inline-block;overflow:hidden;box-shadow:0 3px 10px rgba(6, 182, 212, 0.2);animation:pulse 2s infinite;'><style>@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}</style><section style='position:absolute;top:0;left:0;right:0;bottom:0;'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none' style='position:absolute;bottom:0;width:100%;height:50px;transform:rotate(180deg);'><path d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='#ffffff' opacity='0.2'></path></svg></section><p style='color:#ffffff;margin:0;font-size:14px;position:relative;z-index:1;'>倾听你的心声，期待你的在看 💙</p></section></section>",
+          "templateName": "动态波浪底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-30T07:44:55.370Z"
+  },
+  "霓虹灯效": {
+    "type": "custom",
+    "description": "霓虹灯效风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#374151",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#ec4899",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='background:#000000;padding:10px 15px;border-radius:4px;display:inline-block;'><p style='font-size:16px;color:#ffffff;margin:0;font-weight:600;text-shadow:0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 15px #ec4899;'>{h2_text}</p></section></section>",
+          "templateName": "霓虹灯效标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#ec4899"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#ec4899",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#f472b6",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#fdf2f8",
+          "borderColor": "#fbcfe8"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#ec4899",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#ec4899",
+        "inlineBgColor": "#fdf2f8",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#ec4899",
+        "hrStyle": "solid",
+        "hrColor": "#fbcfe8"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;'><section style='background:#000000;padding:10px 20px;border-radius:30px;display:inline-block;animation:neon 1.5s infinite alternate;'><style>@keyframes neon{0%{box-shadow:0 0 5px #ec4899, 0 0 10px #ec4899}100%{box-shadow:0 0 10px #ec4899, 0 0 20px #ec4899, 0 0 30px #ec4899}}</style><p style='color:#ffffff;margin:0;font-size:14px;text-shadow:0 0 5px #ec4899, 0 0 10px #ec4899, 0 0 15px #ec4899;'>一键三连，照亮前行 ✨</p></section></section>",
+          "templateName": "霓虹灯效底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-30T07:44:55.370Z"
+  },
+  "磨砂玻璃": {
+    "type": "custom",
+    "description": "磨砂玻璃风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'OPPO Sans', 'Source Han Sans CN', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.025
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#374151",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#8b5cf6",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='background:rgba(139, 92, 246, 0.1);backdrop-filter:blur(5px);padding:10px 15px;border-radius:8px;display:inline-block;border:1px solid rgba(139, 92, 246, 0.2);'><p style='font-size:16px;color:#8b5cf6;margin:0;font-weight:600;'>{h2_text}</p></section></section>",
+          "templateName": "磨砂玻璃标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#8b5cf6"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#8b5cf6",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#a78bfa",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#f5f3ff",
+          "borderColor": "#ddd6fe"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#8b5cf6",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#8b5cf6",
+        "inlineBgColor": "#f5f3ff",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#8b5cf6",
+        "hrStyle": "solid",
+        "hrColor": "#ddd6fe"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;'><section style='background:rgba(139, 92, 246, 0.1);backdrop-filter:blur(5px);padding:10px 20px;border-radius:8px;display:inline-block;border:1px solid rgba(139, 92, 246, 0.2);'><p style='color:#8b5cf6;margin:0;font-size:14px;'>留下你的思考，分享你的感动 💭</p></section></section>",
+          "templateName": "磨砂玻璃底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-30T07:44:55.370Z"
+  },
+  "半透明卡片": {
+    "type": "custom",
+    "description": "半透明卡片风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Helvetica Neue', 'PingFang SC', sans-serif",
+        "lineHeight": 1.75,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#374151",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#10b981",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='background:rgba(16, 185, 129, 0.1);padding:12px 15px;border-radius:8px;display:inline-block;box-shadow:0 4px 6px rgba(16, 185, 129, 0.1);'><p style='font-size:16px;color:#10b981;margin:0;font-weight:600;'>{h2_text}</p></section></section>",
+          "templateName": "半透明卡片标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#10b981"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#10b981",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#34d399",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#ecfdf5",
+          "borderColor": "#a7f3d0"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#374151",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#10b981",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#10b981",
+        "inlineBgColor": "#ecfdf5",
+        "blockTheme": "prism"
+      },
+      "other": {
+        "linkColor": "#10b981",
+        "hrStyle": "solid",
+        "hrColor": "#a7f3d0"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;'><section style='background:rgba(16, 185, 129, 0.1);padding:12px 20px;border-radius:8px;display:inline-block;box-shadow:0 4px 6px rgba(16, 185, 129, 0.1);transition:transform 0.3s ease, box-shadow 0.3s ease;'><style>section:hover{transform:translateY(-3px);box-shadow:0 8px 15px rgba(16, 185, 129, 0.15);}</style><p style='color:#10b981;margin:0;font-size:14px;'>一颗绿星，点亮你我 💚</p></section></section>",
+          "templateName": "半透明卡片底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-30T07:44:55.370Z"
+  },
+  "极简渐变": {
+    "type": "custom",
+    "description": "简约渐变风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'PingFang SC', 'Microsoft YaHei', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#1e88e5",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='background:linear-gradient(to right, #1e88e5, #42a5f5);padding:12px 20px;border-radius:8px;display:inline-block;'><p style='font-size:16px;color:#ffffff;margin:0;font-weight:600;'>{h2_text}</p></section></section>",
+          "templateName": "极简渐变标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#1e88e5"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#1e88e5",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#42a5f5",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#e3f2fd",
+          "borderColor": "#90caf9"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#1e88e5",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#1e88e5",
+        "inlineBgColor": "#e3f2fd",
+        "blockTheme": "light"
+      },
+      "other": {
+        "linkColor": "#1e88e5",
+        "hrStyle": "solid",
+        "hrColor": "#e3f2fd"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;'><section style='background:linear-gradient(to right, #1e88e5, #42a5f5);padding:10px 20px;border-radius:30px;display:inline-block;'><p style='color:#ffffff;margin:0;font-size:14px;'>点赞是最美的遇见 ✨</p></section></section>",
+          "templateName": "极简渐变底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-30T08:23:13.973Z"
+  },
+  "简约标签": {
+    "type": "custom",
+    "description": "简约标签风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'PingFang SC', 'Microsoft YaHei', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#00897b",
+          "bgColor": "transparent",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='background:white;box-shadow:0 4px 10px rgba(0,0,0,0.1);padding:12px 20px;display:inline-block;border-left:5px solid #00897b;'><p style='font-size:16px;color:#00695c;margin:0;font-weight:600;'>{h2_text}</p></section></section>",
+          "templateName": "简约标签标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#00897b"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#00897b",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#26a69a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#e0f2f1",
+          "borderColor": "#b2dfdb"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#00897b",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#00897b",
+        "inlineBgColor": "#e0f2f1",
+        "blockTheme": "light"
+      },
+      "other": {
+        "linkColor": "#00897b",
+        "hrStyle": "solid",
+        "hrColor": "#b2dfdb"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;'><section style='display:inline-block;background:white;box-shadow:0 4px 10px rgba(0,0,0,0.1);padding:10px 20px;border-radius:4px;'><p style='color:#00897b;margin:0;font-size:14px;'>生活如此简约，点赞是必备仪式 🌿</p></section></section>",
+          "templateName": "简约标签底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-30T08:23:13.973Z"
+  },
+  "微立体卡片": {
+    "type": "custom",
+    "description": "微立体卡片风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'PingFang SC', 'Microsoft YaHei', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#43a047",
+          "bgColor": "transparen",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='background:white;box-shadow:3px 3px 0 #c8e6c9;border:1px solid #43a047;padding:12px 20px;display:inline-block;'><p style='font-size:16px;color:#2e7d32;margin:0;font-weight:600;'>{h2_text}</p></section></section>",
+          "templateName": "微立体卡片标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#43a047"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#43a047",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#66bb6a",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#e8f5e9",
+          "borderColor": "#c8e6c9"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#43a047",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#43a047",
+        "inlineBgColor": "#e8f5e9",
+        "blockTheme": "light"
+      },
+      "other": {
+        "linkColor": "#43a047",
+        "hrStyle": "solid",
+        "hrColor": "#c8e6c9"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;text-align:center;'><section style='display:inline-block;background:white;box-shadow:3px 3px 0 #c8e6c9;border:1px solid #43a047;padding:10px 20px;'><p style='color:#2e7d32;margin:0;font-size:14px;'>种下点赞的种子，收获满满惊喜 🌱</p></section></section>",
+          "templateName": "微立体卡片底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-30T08:23:16.131Z"
+  },
+  "撕纸边缘": {
+    "type": "custom",
+    "description": "撕纸效果风格设计",
+    "styleConfig": {
+      "global": {
+        "centerContent": false,
+        "font": "'Noto Sans SC', 'PingFang SC', sans-serif",
+        "lineHeight": 1.8,
+        "letterSpacing": 0.02
+      },
+      "paragraph": {
+        "fontSize": 16,
+        "colorMode": "single",
+        "color": "#333333",
+        "colors": [],
+        "randomColors": [],
+        "randomCount": 3,
+        "margin": 1.2
+      },
+      "headings": {
+        "h1": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 24,
+          "color": "#3949ab",
+          "bgColor": "transparen",
+          "border": false
+        },
+        "h2": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin:20px 0 15px;'><section style='position:relative;'><section style='position:relative;background:#3949ab;color:#ffffff;padding:15px 20px;display:inline-block;clip-path:polygon(0% 0%, 100% 0%, 98% 5%, 100% 10%, 97% 15%, 99% 20%, 96% 25%, 99% 30%, 97% 35%, 100% 40%, 98% 45%, 100% 50%, 97% 55%, 99% 60%, 96% 65%, 98% 70%, 99% 75%, 97% 80%, 100% 85%, 98% 90%, 100% 95%, 98% 100%, 0% 100%);'><p style='font-size:16px;color:#ffffff;margin:0;font-weight:normal;'>{h2_text}</p></section><section style='position:absolute;top:3px;right:3px;width:20px;height:20px;background:#c5cae9;clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 20% 80%, 5% 70%, 10% 60%, 15% 50%, 20% 40%, 15% 30%, 10% 20%);opacity:0.3;'></section></section></section>",
+          "templateName": "撕纸边缘标题"
+        },
+        "h3": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": "",
+          "fontSize": 18,
+          "color": "#3949ab"
+        }
+      },
+      "emphasis": {
+        "strong": {
+          "colorMode": "single",
+          "color": "#3949ab",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "transparent",
+          "underline": false
+        },
+        "em": {
+          "colorMode": "single",
+          "color": "#5c6bc0",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "keepItalic": true
+        },
+        "blockquote": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "bgColor": "#e8eaf6",
+          "borderColor": "#c5cae9"
+        },
+        "list": {
+          "colorMode": "single",
+          "color": "#333333",
+          "colors": [],
+          "randomColors": [],
+          "randomCount": 3,
+          "markerColor": "#3949ab",
+          "bold": false
+        }
+      },
+      "code": {
+        "inlineColor": "#3949ab",
+        "inlineBgColor": "#e8eaf6",
+        "blockTheme": "light"
+      },
+      "other": {
+        "linkColor": "#3949ab",
+        "hrStyle": "solid",
+        "hrColor": "#c5cae9"
+      },
+      "templates": {
+        "top": {
+          "useTemplate": false,
+          "templateContent": "",
+          "templateName": ""
+        },
+        "bottom": {
+          "useTemplate": true,
+          "templateContent": "<section style='margin-top:40px;'><section style='position:relative;overflow:hidden;'><section style='background:#e8eaf6;padding:20px;clip-path:polygon(0% 0%, 3% 3%, 5% 0%, 7% 5%, 10% 2%, 12% 0%, 15% 5%, 18% 0%, 20% 3%, 23% 0%, 25% 5%, 28% 0%, 30% 3%, 33% 0%, 35% 5%, 38% 0%, 40% 3%, 43% 0%, 45% 5%, 48% 0%, 50% 3%, 53% 0%, 55% 5%, 58% 0%, 60% 3%, 63% 0%, 65% 5%, 68% 0%, 70% 3%, 73% 0%, 75% 5%, 78% 0%, 80% 3%, 83% 0%, 85% 5%, 88% 0%, 90% 3%, 93% 0%, 95% 5%, 98% 0%, 100% 3%, 100% 100%, 0% 100%);'><section style='background:white;padding:15px;clip-path:polygon(0% 10%, 2% 7%, 5% 10%, 7% 5%, 10% 8%, 12% 6%, 15% 10%, 18% 6%, 20% 9%, 23% 6%, 25% 10%, 28% 5%, 30% 9%, 33% 7%, 35% 10%, 38% 5%, 40% 8%, 43% 6%, 45% 10%, 48% 7%, 50% 9%, 53% 6%, 55% 10%, 58% 5%, 60% 8%, 63% 7%, 65% 10%, 68% 6%, 70% 9%, 73% 7%, 75% 10%, 78% 5%, 80% 8%, 83% 6%, 85% 10%, 88% 7%, 90% 9%, 93% 6%, 95% 10%, 98% 6%, 100% 8%, 100% 100%, 0% 100%);text-align:center;'><p style='color:#3949ab;margin:0;font-size:16px;font-weight:bold;'>撕开一角，留下点赞</p><section style='margin-top:10px;'><svg width='100' height='30' viewBox='0 0 100 30'><path d='M20,15 Q50,0 80,15' fill='none' stroke='#c5cae9' stroke-width='2' stroke-dasharray='4,2'/><circle cx='20' cy='15' r='3' fill='#3949ab'/><circle cx='80' cy='15' r='3' fill='#3949ab'/></svg></section></section></section><section style='position:absolute;top:0;left:0;width:100%;height:10px;background:#3949ab;clip-path:polygon(0% 0%, 3% 30%, 5% 0%, 7% 50%, 10% 20%, 12% 0%, 15% 50%, 18% 0%, 20% 30%, 23% 0%, 25% 50%, 28% 0%, 30% 30%, 33% 0%, 35% 50%, 38% 0%, 40% 30%, 43% 0%, 45% 50%, 48% 0%, 50% 30%, 53% 0%, 55% 50%, 58% 0%, 60% 30%, 63% 0%, 65% 50%, 68% 0%, 70% 30%, 73% 0%, 75% 50%, 78% 0%, 80% 30%, 83% 0%, 85% 50%, 88% 0%, 90% 30%, 93% 0%, 95% 50%, 98% 0%, 100% 30%, 100% 100%, 0% 100%);'></section></section></section>",
+          "templateName": "撕纸边缘底部"
+        }
+      }
+    },
+    "timestamp": "2025-03-30T08:30:43.398Z"
+  }
+}
