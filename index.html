@@ -5179,15 +5179,17 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     };
                 }
                 
-                // 阻止iframe和其他保存方法
+                // 阻止iframe和其他保存方法，但允许正常的下载功能
                 const originalCreateElement = document.createElement;
                 document.createElement = function(tagName) {
                     const element = originalCreateElement.call(this, tagName);
                     if (tagName.toLowerCase() === 'a' && element) {
                         const originalClick = element.click;
                         element.click = function() {
-                            if (this.download) {
-                                showProtectionMessage('🚫 禁止下载页面文件');
+                            // 允许特定的下载按钮工作（排版工具的下载功能）
+                            if (this.download && !this.classList.contains('allow-download') && 
+                                !this.href.startsWith('blob:') && !this.href.startsWith('data:')) {
+                                showProtectionMessage('🚫 禁止下载页面源文件');
                                 return false;
                             }
                             return originalClick.call(this);
@@ -7519,6 +7521,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 const a = document.createElement('a');
                 a.href = url;
                 a.download = `${title}.html`;
+                a.classList.add('allow-download'); // 标记为允许下载
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
@@ -7608,6 +7611,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 const a = document.createElement('a');
                 a.href = url;
                 a.download = `公众号文章排版工具_模板库_${new Date().toISOString().slice(0, 10)}.json`;
+                a.classList.add('allow-download'); // 标记为允许下载
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
@@ -8353,6 +8357,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                         const a = document.createElement('a');
                                         a.href = url;
                                         a.download = result.fileName;
+                                        a.classList.add('allow-download'); // 标记为允许下载
                                         document.body.appendChild(a);
                                         a.click();
                                         setTimeout(() => {
@@ -8383,6 +8388,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                     const a = document.createElement('a');
                                     a.href = url;
                                     a.download = zipFileName;
+                                    a.classList.add('allow-download'); // 标记为允许下载
                                     document.body.appendChild(a);
                                     a.click();
                                     
@@ -8438,6 +8444,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                     const a = document.createElement('a');
                                     a.href = url;
                                     a.download = result.fileName;
+                                    a.classList.add('allow-download'); // 标记为允许下载
                                     document.body.appendChild(a);
                                     a.click();
                                     setTimeout(() => {
