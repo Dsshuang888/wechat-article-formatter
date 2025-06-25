@@ -5268,26 +5268,34 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 
                 // 阻止保存快捷键和其他相关操作的最后防线
                 window.addEventListener('keydown', function(e) {
-                    // 阻止Ctrl+S保存
-                    if (e.ctrlKey && (e.key === 's' || e.key === 'S' || e.keyCode === 83)) {
+                    // 阻止Ctrl+S保存（Windows/Linux）和 Command+S保存（Mac）
+                    if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S' || e.keyCode === 83)) {
                         e.preventDefault();
                         e.stopImmediatePropagation();
                         showProtectionMessage('🚫 禁止保存到本地，请在线使用！');
                         return false;
                     }
                     
-                    // 阻止其他保存相关快捷键
-                    if (e.ctrlKey && e.shiftKey && (e.key === 's' || e.key === 'S')) {
+                    // 阻止其他保存相关快捷键（包括另存为）
+                    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 's' || e.key === 'S' || e.keyCode === 83)) {
                         e.preventDefault();
                         e.stopImmediatePropagation();
                         showProtectionMessage('🚫 禁止另存为操作！');
                         return false;
                     }
                     
+                    // 阻止打印快捷键（也可能用于保存PDF）
+                    if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 'P' || e.keyCode === 80)) {
+                        e.preventDefault();
+                        e.stopImmediatePropagation();
+                        showProtectionMessage('🚫 禁止打印或保存为PDF！');
+                        return false;
+                    }
+                    
                     // 阻止F12和其他开发者工具快捷键
                     if (e.key === 'F12' || 
-                        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
-                        (e.ctrlKey && e.key === 'U')) {
+                        ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+                        ((e.ctrlKey || e.metaKey) && e.key === 'U')) {
                         e.preventDefault();
                         e.stopImmediatePropagation();
                         showProtectionMessage('🚫 禁止查看源代码！');
