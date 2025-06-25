@@ -4933,6 +4933,184 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 }
             };
 
+            // 页面保护机制
+            function initProtection() {
+                // 显示保护消息
+                function showProtectionMessage(message) {
+                    const notification = document.createElement('div');
+                    notification.className = 'fixed top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-md shadow-lg z-50';
+                    notification.textContent = message;
+                    document.body.appendChild(notification);
+                    
+                    setTimeout(() => {
+                        notification.style.opacity = '0';
+                        notification.style.transition = 'opacity 0.5s';
+                        setTimeout(() => {
+                            if (document.body.contains(notification)) {
+                                document.body.removeChild(notification);
+                            }
+                        }, 500);
+                    }, 3000);
+                }
+                
+                // 阻止所有下载方法，只允许特定的工具生成内容下载
+                const originalCreateElement = document.createElement;
+                document.createElement = function(tagName) {
+                    const element = originalCreateElement.call(this, tagName);
+                    if (tagName.toLowerCase() === 'a' && element) {
+                        const originalClick = element.click;
+                        element.click = function() {
+                            // 只允许明确标记为允许下载的元素
+                            if (this.download) {
+                                if (!this.classList.contains('allow-download')) {
+                                    showProtectionMessage('🚫 禁止下载页面源文件');
+                                    return false;
+                                }
+                                // 额外验证：只允许特定的文件名模式
+                                const allowedPatterns = [
+                                    /\.html$/,
+                                    /\.json$/,
+                                    /\.zip$/,
+                                    /\.txt$/,
+                                    /\.md$/
+                                ];
+                                const fileName = this.download || '';
+                                const isAllowedFile = allowedPatterns.some(pattern => pattern.test(fileName));
+                                if (!isAllowedFile) {
+                                    showProtectionMessage('🚫 禁止下载未授权文件类型');
+                                    return false;
+                                }
+                            }
+                            return originalClick.call(this);
+                        };
+                    }
+                    return element;
+                };
+                
+                // 禁用右键菜单
+                document.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                    showProtectionMessage('🚫 禁止右键操作');
+                }, true);
+                
+                // 阻止保存快捷键
+                document.addEventListener('keydown', function(e) {
+                    const key = e.key.toLowerCase();
+                    
+                    // Ctrl+S (保存)
+                    if (e.ctrlKey && (key === 's' || e.keyCode === 83)) {
+                        e.preventDefault();
+                        e.stopImmediatePropagation();
+                        showProtectionMessage('🚫 禁止保存到本地，请在线使用！');
+                        return false;
+                    }
+                    
+                    // Ctrl+A (全选)
+                    if (e.ctrlKey && (key === 'a' || e.keyCode === 65)) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showProtectionMessage('🚫 禁止全选操作');
+                        return false;
+                    }
+                    
+                    // Ctrl+C (复制页面内容)
+                    if (e.ctrlKey && (key === 'c' || e.keyCode === 67)) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showProtectionMessage('🚫 禁止复制页面内容');
+                        return false;
+                    }
+                    
+                    // Ctrl+P (打印)
+                    if (e.ctrlKey && (key === 'p' || e.keyCode === 80)) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showProtectionMessage('🚫 禁止打印操作');
+                        return false;
+                    }
+                    
+                    // F12 (开发者工具)
+                    if (key === 'f12' || e.keyCode === 123) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showProtectionMessage('🚫 禁止打开开发者工具');
+                        return false;
+                    }
+                    
+                    // Ctrl+Shift+I (开发者工具)
+                    if (e.ctrlKey && e.shiftKey && (key === 'i' || e.keyCode === 73)) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showProtectionMessage('🚫 禁止打开开发者工具');
+                        return false;
+                    }
+                    
+                    // Ctrl+U (查看源代码)
+                    if (e.ctrlKey && (key === 'u' || e.keyCode === 85)) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showProtectionMessage('🚫 禁止查看源代码');
+                        return false;
+                    }
+                }, true);
+                
+                // 阻止通过其他方式创建下载
+                const originalURL = window.URL || window.webkitURL;
+                if (originalURL) {
+                    const originalCreateObjectURL = originalURL.createObjectURL;
+                    originalURL.createObjectURL = function(blob) {
+                        // 检查调用栈，确保是从允许的函数调用
+                        const stack = new Error().stack;
+                        const isFromAllowedFunction = stack.includes('downloadHtmlBtn') || 
+                                                   stack.includes('save-template') || 
+                                                   stack.includes('export-templates') ||
+                                                   stack.includes('batch');
+                        
+                        if (!isFromAllowedFunction && blob instanceof Blob) {
+                            console.warn('未授权的Blob URL创建被阻止');
+                            showProtectionMessage('🚫 检测到未授权的下载尝试');
+                            return 'about:blank';
+                        }
+                        
+                        return originalCreateObjectURL.call(this, blob);
+                    };
+                }
+                
+                // 阻止通过浏览器地址栏直接访问文件
+                if (window.location.protocol === 'file:') {
+                    showProtectionMessage('🚫 请通过服务器访问，不支持本地文件访问');
+                }
+                
+                // 高级保护：监控控制台使用
+                if (!window.devtools) {
+                    window.devtools = {open: false, orientation: null};
+                }
+                setInterval(() => {
+                    if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
+                        if (!window.devtools.open) {
+                            window.devtools.open = true;
+                            showProtectionMessage('🚫 检测到开发者工具，已禁用部分功能');
+                            // 可以在这里添加更多的保护措施
+                        }
+                    } else {
+                        window.devtools.open = false;
+                    }
+                }, 500);
+                
+                // 保护关键函数不被重写
+                const protectedFunctions = ['createElement', 'createObjectURL'];
+                protectedFunctions.forEach(funcName => {
+                    Object.defineProperty(window, `_original_${funcName}`, {
+                        value: window[funcName] || document[funcName],
+                        writable: false,
+                        configurable: false
+                    });
+                });
+            }
+            
+            // 初始化保护机制
+            initProtection();
+
             // 保存的模板
             let savedTemplates = {};
             
