@@ -4933,184 +4933,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 }
             };
 
-            // 页面保护机制
-            function initProtection() {
-                // 显示保护消息
-                function showProtectionMessage(message) {
-                    const notification = document.createElement('div');
-                    notification.className = 'fixed top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-md shadow-lg z-50';
-                    notification.textContent = message;
-                    document.body.appendChild(notification);
-                    
-                    setTimeout(() => {
-                        notification.style.opacity = '0';
-                        notification.style.transition = 'opacity 0.5s';
-                        setTimeout(() => {
-                            if (document.body.contains(notification)) {
-                                document.body.removeChild(notification);
-                            }
-                        }, 500);
-                    }, 3000);
-                }
-                
-                // 阻止所有下载方法，只允许特定的工具生成内容下载
-                const originalCreateElement = document.createElement;
-                document.createElement = function(tagName) {
-                    const element = originalCreateElement.call(this, tagName);
-                    if (tagName.toLowerCase() === 'a' && element) {
-                        const originalClick = element.click;
-                        element.click = function() {
-                            // 只允许明确标记为允许下载的元素
-                            if (this.download) {
-                                if (!this.classList.contains('allow-download')) {
-                                    showProtectionMessage('🚫 禁止下载页面源文件');
-                                    return false;
-                                }
-                                // 额外验证：只允许特定的文件名模式
-                                const allowedPatterns = [
-                                    /\.html$/,
-                                    /\.json$/,
-                                    /\.zip$/,
-                                    /\.txt$/,
-                                    /\.md$/
-                                ];
-                                const fileName = this.download || '';
-                                const isAllowedFile = allowedPatterns.some(pattern => pattern.test(fileName));
-                                if (!isAllowedFile) {
-                                    showProtectionMessage('🚫 禁止下载未授权文件类型');
-                                    return false;
-                                }
-                            }
-                            return originalClick.call(this);
-                        };
-                    }
-                    return element;
-                };
-                
-                // 禁用右键菜单
-                document.addEventListener('contextmenu', function(e) {
-                    e.preventDefault();
-                    showProtectionMessage('🚫 禁止右键操作');
-                }, true);
-                
-                // 阻止保存快捷键
-                document.addEventListener('keydown', function(e) {
-                    const key = e.key.toLowerCase();
-                    
-                    // Ctrl+S (保存)
-                    if (e.ctrlKey && (key === 's' || e.keyCode === 83)) {
-                        e.preventDefault();
-                        e.stopImmediatePropagation();
-                        showProtectionMessage('🚫 禁止保存到本地，请在线使用！');
-                        return false;
-                    }
-                    
-                    // Ctrl+A (全选)
-                    if (e.ctrlKey && (key === 'a' || e.keyCode === 65)) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        showProtectionMessage('🚫 禁止全选操作');
-                        return false;
-                    }
-                    
-                    // Ctrl+C (复制页面内容)
-                    if (e.ctrlKey && (key === 'c' || e.keyCode === 67)) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        showProtectionMessage('🚫 禁止复制页面内容');
-                        return false;
-                    }
-                    
-                    // Ctrl+P (打印)
-                    if (e.ctrlKey && (key === 'p' || e.keyCode === 80)) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        showProtectionMessage('🚫 禁止打印操作');
-                        return false;
-                    }
-                    
-                    // F12 (开发者工具)
-                    if (key === 'f12' || e.keyCode === 123) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        showProtectionMessage('🚫 禁止打开开发者工具');
-                        return false;
-                    }
-                    
-                    // Ctrl+Shift+I (开发者工具)
-                    if (e.ctrlKey && e.shiftKey && (key === 'i' || e.keyCode === 73)) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        showProtectionMessage('🚫 禁止打开开发者工具');
-                        return false;
-                    }
-                    
-                    // Ctrl+U (查看源代码)
-                    if (e.ctrlKey && (key === 'u' || e.keyCode === 85)) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        showProtectionMessage('🚫 禁止查看源代码');
-                        return false;
-                    }
-                }, true);
-                
-                // 阻止通过其他方式创建下载
-                const originalURL = window.URL || window.webkitURL;
-                if (originalURL) {
-                    const originalCreateObjectURL = originalURL.createObjectURL;
-                    originalURL.createObjectURL = function(blob) {
-                        // 检查调用栈，确保是从允许的函数调用
-                        const stack = new Error().stack;
-                        const isFromAllowedFunction = stack.includes('downloadHtmlBtn') || 
-                                                   stack.includes('save-template') || 
-                                                   stack.includes('export-templates') ||
-                                                   stack.includes('batch');
-                        
-                        if (!isFromAllowedFunction && blob instanceof Blob) {
-                            console.warn('未授权的Blob URL创建被阻止');
-                            showProtectionMessage('🚫 检测到未授权的下载尝试');
-                            return 'about:blank';
-                        }
-                        
-                        return originalCreateObjectURL.call(this, blob);
-                    };
-                }
-                
-                // 阻止通过浏览器地址栏直接访问文件
-                if (window.location.protocol === 'file:') {
-                    showProtectionMessage('🚫 请通过服务器访问，不支持本地文件访问');
-                }
-                
-                // 高级保护：监控控制台使用
-                if (!window.devtools) {
-                    window.devtools = {open: false, orientation: null};
-                }
-                setInterval(() => {
-                    if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
-                        if (!window.devtools.open) {
-                            window.devtools.open = true;
-                            showProtectionMessage('🚫 检测到开发者工具，已禁用部分功能');
-                            // 可以在这里添加更多的保护措施
-                        }
-                    } else {
-                        window.devtools.open = false;
-                    }
-                }, 500);
-                
-                // 保护关键函数不被重写
-                const protectedFunctions = ['createElement', 'createObjectURL'];
-                protectedFunctions.forEach(funcName => {
-                    Object.defineProperty(window, `_original_${funcName}`, {
-                        value: window[funcName] || document[funcName],
-                        writable: false,
-                        configurable: false
-                    });
-                });
-            }
-            
-            // 初始化保护机制
-            initProtection();
-
             // 保存的模板
             let savedTemplates = {};
             
@@ -7269,7 +7091,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 // 生成CSS
                 const css = generateCSS();
                 
-                // 创建完整HTML，包含代码高亮支持
+                // 创建完整HTML
                 const fullHtml = `
                     <!DOCTYPE html>
                     <html>
@@ -7277,8 +7099,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
                         <meta charset="UTF-8">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                         <title>${title}</title>
-                        <!-- Prism.js 代码高亮样式 -->
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
                         <style>
                             ${css}
                         </style>
@@ -7291,15 +7111,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                 ${bottomContent}
                             </div>
                         </div>
-                        <!-- Prism.js 代码高亮脚本 -->
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-                        <script>
-                            // 确保代码高亮正常工作
-                            if (typeof Prism !== 'undefined') {
-                                Prism.highlightAll();
-                            }
-                        </script>
                     </body>
                     </html>
                 `;
@@ -7310,7 +7121,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 const a = document.createElement('a');
                 a.href = url;
                 a.download = `${title}.html`;
-                a.classList.add('allow-download'); // 标记为允许下载
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
@@ -7400,7 +7210,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 const a = document.createElement('a');
                 a.href = url;
                 a.download = `公众号文章排版工具_模板库_${new Date().toISOString().slice(0, 10)}.json`;
-                a.classList.add('allow-download'); // 标记为允许下载
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
@@ -8146,7 +7955,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                         const a = document.createElement('a');
                                         a.href = url;
                                         a.download = result.fileName;
-                                        a.classList.add('allow-download'); // 标记为允许下载
                                         document.body.appendChild(a);
                                         a.click();
                                         setTimeout(() => {
@@ -8177,7 +7985,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                     const a = document.createElement('a');
                                     a.href = url;
                                     a.download = zipFileName;
-                                    a.classList.add('allow-download'); // 标记为允许下载
                                     document.body.appendChild(a);
                                     a.click();
                                     
@@ -8233,7 +8040,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                     const a = document.createElement('a');
                                     a.href = url;
                                     a.download = result.fileName;
-                                    a.classList.add('allow-download'); // 标记为允许下载
                                     document.body.appendChild(a);
                                     a.click();
                                     setTimeout(() => {
@@ -8295,7 +8101,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                             // 生成CSS
                             const css = generateCSSForTemplate(templateConfig);
                             
-                            // 创建完整HTML，包含代码高亮支持
+                            // 创建完整HTML
                             return `
                                 <!DOCTYPE html>
                                 <html>
@@ -8303,8 +8109,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                     <meta charset="UTF-8">
                                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                                     <title>${title}</title>
-                                    <!-- Prism.js 代码高亮样式 -->
-                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
                                     <style>
                                         ${css}
                                     </style>
@@ -8317,15 +8121,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                             ${bottomContent}
                                         </div>
                                     </div>
-                                    <!-- Prism.js 代码高亮脚本 -->
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-                                    <script>
-                                        // 确保代码高亮正常工作
-                                        if (typeof Prism !== 'undefined') {
-                                            Prism.highlightAll();
-                                        }
-                                    </script>
                                 </body>
                                 </html>
                             `;
@@ -16910,152 +16705,5 @@ html {
     transform: rotate(359deg);
   }
 }
-</style>
-
-<script>
-(function() {
-    'use strict';
-    
-    // 强化版源码保护机制
-    function showProtectionMessage(message) {
-        const notification = document.createElement('div');
-        notification.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #ff4757; color: white; padding: 12px 20px; border-radius: 8px; z-index: 10000; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);';
-        notification.textContent = message;
-        document.body.appendChild(notification);
-        setTimeout(() => notification.remove(), 3000);
-    }
-
-    // 受保护的文件类型
-    const protectedFiles = [
-        '.html', '.js', '.css', '.json', '.md', '.txt',
-        'FileSaver.min.js', 'jszip.min.js', 'marked.min.js', 
-        'prism.min.js', 'Sortable.min.js', 'saved_resource'
-    ];
-
-    // 阻止右键菜单
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-        showProtectionMessage('🚫 禁止右键操作');
-        return false;
-    }, true);
-
-    // 阻止常用快捷键
-    document.addEventListener('keydown', function(e) {
-        // 阻止保存
-        if (e.ctrlKey && (e.key === 's' || e.key === 'S')) {
-            e.preventDefault();
-            showProtectionMessage('🚫 禁止保存页面');
-            return false;
-        }
-        // 阻止打印
-        if (e.ctrlKey && (e.key === 'p' || e.key === 'P')) {
-            e.preventDefault();
-            showProtectionMessage('🚫 禁止打印页面');
-            return false;
-        }
-        // 阻止全选
-        if (e.ctrlKey && (e.key === 'a' || e.key === 'A')) {
-            if (!e.target.closest('input, textarea, [contenteditable]')) {
-                e.preventDefault();
-                showProtectionMessage('🚫 禁止全选');
-                return false;
-            }
-        }
-        // 阻止查看源码
-        if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
-            e.preventDefault();
-            showProtectionMessage('🚫 禁止查看源码');
-            return false;
-        }
-        // 阻止开发者工具
-        if (e.key === 'F12' || 
-            (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) ||
-            (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j')) ||
-            (e.ctrlKey && e.shiftKey && (e.key === 'C' || e.key === 'c'))) {
-            e.preventDefault();
-            showProtectionMessage('🚫 禁止打开开发者工具');
-            return false;
-        }
-    }, true);
-
-    // 检测开发者工具
-    let devtools = {open: false, orientation: null};
-    setInterval(function(){
-        if(window.outerHeight - window.innerHeight > 160 || window.outerWidth - window.innerWidth > 160){
-            if(!devtools.open){
-                devtools.open = true;
-                showProtectionMessage('🚫 检测到开发者工具');
-                setTimeout(() => window.location.reload(), 2000);
-            }
-        } else {
-            devtools.open = false;
-        }
-    }, 500);
-
-    // 阻止选择文本（除了输入框）
-    document.addEventListener('selectstart', function(e) {
-        if (e.target.tagName.toLowerCase() !== 'input' && 
-            e.target.tagName.toLowerCase() !== 'textarea' && 
-            !e.target.closest('[contenteditable]') &&
-            !e.target.closest('.allow-select')) {
-            e.preventDefault();
-        }
-    }, true);
-
-    // 阻止拖拽
-    document.addEventListener('dragstart', function(e) {
-        e.preventDefault();
-        showProtectionMessage('🚫 禁止拖拽操作');
-    }, true);
-
-    // 重写创建元素方法，阻止下载
-    const originalCreateElement = document.createElement;
-    document.createElement = function(tagName) {
-        const element = originalCreateElement.call(this, tagName);
-        if (tagName.toLowerCase() === 'a' && element) {
-            const originalClick = element.click;
-            element.click = function() {
-                // 只允许工具生成的内容下载
-                if (this.download && !this.classList.contains('allow-download')) {
-                    showProtectionMessage('🚫 禁止下载页面文件');
-                    return false;
-                }
-                return originalClick.call(this);
-            };
-        }
-        return element;
-    };
-
-    // 阻止通过fetch/xhr获取受保护文件
-    const originalFetch = window.fetch;
-    window.fetch = function(url, options) {
-        if (typeof url === 'string' && protectedFiles.some(ext => url.includes(ext))) {
-            showProtectionMessage('🚫 禁止访问系统文件');
-            return Promise.reject(new Error('Forbidden'));
-        }
-        return originalFetch.call(this, url, options);
-    };
-
-    // 禁用控制台
-    window.console.log = () => {};
-    window.console.warn = () => {};
-    window.console.error = () => {};
-    window.console.info = () => {};
-    window.console.debug = () => {};
-
-    // 阻止iframe嵌入
-    if (window.top !== window.self) {
-        window.top.location = window.self.location;
-    }
-
-    // 禁用打印
-    window.print = function() {
-        showProtectionMessage('🚫 禁止打印页面');
-        return false;
-    };
-
-})();
-</script>
-
-</body>
-</html>
+</style><div id="mount" style="display: block;"></div></template></div></html>
+</style><div id="mount" style="display: block;"></div></template></div></html>
