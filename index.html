@@ -5235,45 +5235,28 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     return element;
                 };
                 
-                // 2. 拦截URL.createObjectURL和Blob下载
+                // 2. 简化的URL拦截（减少干扰）
                 const originalCreateObjectURL = URL.createObjectURL;
                 URL.createObjectURL = function(blob) {
-                    // 检查调用堆栈，确定是否为合法的下载操作
-                    const stack = new Error().stack;
-                    const isFromDownloadBtn = stack.includes('downloadHtml') || 
-                                             stack.includes('export-templates') || 
-                                             stack.includes('generateCSS');
-                    
-                    if (!isFromDownloadBtn && blob instanceof Blob) {
-                        // 检查blob内容是否包含源码特征
-                        if (blob.type === 'text/html' || blob.type === 'application/json') {
-                            const reader = new FileReader();
-                            reader.onload = function() {
-                                const content = reader.result;
-                                if (content.includes('<script') || 
-                                    content.includes('login.html') || 
-                                    content.includes('AUTH_CONFIG') ||
-                                    content.includes('公众号文章排版工具.html')) {
-                                    showProtectionMessage('🚫 检测到非法下载尝试');
-                                    return;
-                                }
-                            };
-                            reader.readAsText(blob);
-                        }
+                    // 只记录日志，不阻止正常功能
+                    if (blob instanceof Blob && (blob.type === 'text/html' || blob.type === 'application/json')) {
+                        console.log('检测到文件下载操作，类型:', blob.type);
                     }
                     
                     return originalCreateObjectURL.call(this, blob);
                 };
                 
-                // 3. 增强保存页面检测
+                // 3. 保留原有功能，减少干扰
+                // 注释掉过度的事件监听拦截
+                /*
                 const originalAddEventListener = EventTarget.prototype.addEventListener;
                 EventTarget.prototype.addEventListener = function(type, listener, options) {
                     if (type === 'beforeunload' || type === 'unload') {
-                        // 允许正常的页面卸载事件
                         return originalAddEventListener.call(this, type, listener, options);
                     }
                     return originalAddEventListener.call(this, type, listener, options);
                 };
+                */
                 
                 // 阻止右键保存
                 document.addEventListener('contextmenu', function(e) {
@@ -5312,32 +5295,31 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     }
                 }, true);
                 
-                // 检测开发者工具是否打开
+                // 温和的开发者工具检测（不隐藏页面，只提示）
                 let devtoolsChecker = {
                     open: false,
                     orientation: null
                 };
                 
                 setInterval(function() {
-                    if (window.outerHeight - window.innerHeight > 100 || 
-                        window.outerWidth - window.innerWidth > 100) {
+                    if (window.outerHeight - window.innerHeight > 200 || 
+                        window.outerWidth - window.innerWidth > 200) {
                         if (!devtoolsChecker.open) {
                             devtoolsChecker.open = true;
-                            document.body.style.display = 'none';
-                            showProtectionMessage('🚫 检测到开发者工具，页面已隐藏！请关闭开发者工具！');
+                            // 只显示警告，不隐藏页面
+                            showProtectionMessage('⚠️ 检测到开发者工具已打开，请注意保护知识产权');
                         }
                     } else {
                         if (devtoolsChecker.open) {
                             devtoolsChecker.open = false;
-                            document.body.style.display = 'block';
                         }
                     }
-                }, 500);
+                }, 2000); // 降低检测频率
                 
-                // 阻止通过浏览器菜单"另存为"
+                // 温和的页面可见性检测（减少误报）
+                /*
                 document.addEventListener('visibilitychange', function() {
                     if (document.hidden) {
-                        // 页面可能被隐藏以进行保存操作
                         setTimeout(function() {
                             if (!document.hidden) {
                                 showProtectionMessage('🚫 检测到可能的保存尝试！');
@@ -5345,6 +5327,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                         }, 100);
                     }
                 });
+                */
             }
 
             // 绑定退出按钮事件
