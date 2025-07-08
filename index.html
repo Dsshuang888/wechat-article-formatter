@@ -2256,30 +2256,27 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                             </button>
                                         </div>
                                     </div>
-                                    <div id="template-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[400px] overflow-y-auto p-1"><div class="bg-white dark:bg-gray-700 p-3 rounded-md border border-gray-200 dark:border-gray-600 hover:shadow-md transition-shadow duration-200 border-l-4 border-l-primary">
-                        <div class="flex flex-col space-y-2">
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <div class="font-medium text-lg">深色专业</div>
-                                    <div class="text-xs text-gray-500 dark:text-gray-400">
-                                        <span class="bg-primary text-white px-1 py-0.5 rounded text-xs mr-1">内置</span>
-                                        2025-06-20 21:20
-                                    </div>
+                                    <div id="template-list" class="flex flex-col gap-1 max-h-[400px] overflow-y-auto p-1"><div class="bg-white dark:bg-gray-700 px-3 py-2 rounded-md border border-gray-200 dark:border-gray-600 hover:shadow-md transition-shadow duration-200 border-l-4 border-l-primary">
+                        <div class="flex items-center justify-between h-8">
+                            <div class="flex items-center space-x-3 flex-1 min-w-0">
+                                <div class="flex gap-1 flex-shrink-0">
+                                    <div class="w-3 h-3 rounded-full" style="background-color: #1a73e8" title="标题颜色"></div>
+                                    <div class="w-3 h-3 rounded-full" style="background-color: #0d5bdd" title="强调颜色"></div>
+                                    <div class="w-3 h-3 rounded-full" style="background-color: #333333" title="段落颜色"></div>
                                 </div>
-                                <div class="flex gap-1">
-                                    <button class="apply-template bg-primary text-white p-1 rounded-md text-sm hover:bg-primary-dark" title="应用此模板" data-name="深色专业">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </button>
-                                    
+                                <div class="flex items-center space-x-2 flex-shrink-0">
+                                    <div class="font-medium text-sm">深色专业</div>
+                                    <span class="bg-primary text-white px-1.5 py-0.5 rounded text-xs">内置</span>
+                                    <span class="text-xs text-gray-500 dark:text-gray-400">2025-06-20 21:20</span>
                                 </div>
+                                <div class="text-xs text-gray-600 dark:text-gray-300 truncate">深色背景的专业风格排版</div>
                             </div>
-                            <p class="text-sm text-gray-600 dark:text-gray-300">深色背景的专业风格排版</p>
-                            <div class="flex flex-wrap gap-1 mt-1">
-                                <div class="w-5 h-5 rounded-full" style="background-color: #1a73e8" title="标题颜色"></div>
-                                <div class="w-5 h-5 rounded-full" style="background-color: #0d5bdd" title="强调颜色"></div>
-                                <div class="w-5 h-5 rounded-full" style="background-color: #333333" title="段落颜色"></div>
+                            <div class="flex gap-1 flex-shrink-0 ml-2">
+                                <button class="apply-template bg-primary text-white p-1 rounded-md text-sm hover:bg-primary-dark" title="应用此模板" data-name="深色专业">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div><div class="bg-white dark:bg-gray-700 p-3 rounded-md border border-gray-200 dark:border-gray-600 hover:shadow-md transition-shadow duration-200 border-l-4 border-l-primary">
@@ -7694,7 +7691,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     const formattedDate = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')} ${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
                     
                     const templateItem = document.createElement('div');
-                    templateItem.className = 'bg-white dark:bg-gray-700 p-3 rounded-md border border-gray-200 dark:border-gray-600 hover:shadow-md transition-shadow duration-200';
+                    templateItem.className = 'bg-white dark:bg-gray-700 px-3 py-2 rounded-md border border-gray-200 dark:border-gray-600 hover:shadow-md transition-shadow duration-200';
                     
                     // 为不同类型模板添加不同样式
                     if (data.type === 'built-in') {
@@ -7702,48 +7699,46 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     }
                     
                     templateItem.innerHTML = `
-                        <div class="flex flex-col space-y-2">
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <div class="font-medium text-lg">${name}</div>
-                                    <div class="text-xs text-gray-500 dark:text-gray-400">
-                                        ${data.type === 'built-in' ? 
-                                            '<span class="bg-primary text-white px-1 py-0.5 rounded text-xs mr-1">内置</span>' : 
-                                            '<span class="bg-gray-200 dark:bg-gray-600 px-1 py-0.5 rounded text-xs mr-1">自定义</span>'
-                                        }
-                                        ${formattedDate}
-                                    </div>
+                        <div class="flex items-center justify-between h-8">
+                            <div class="flex items-center space-x-3 flex-1 min-w-0">
+                                <div class="flex gap-1 flex-shrink-0">
+                                    ${data.styleConfig.headings.h1.color ? 
+                                        `<div class="w-3 h-3 rounded-full" style="background-color: ${data.styleConfig.headings.h1.color}" title="标题颜色"></div>` : ''
+                                    }
+                                    ${data.styleConfig.emphasis.strong.color ? 
+                                        `<div class="w-3 h-3 rounded-full" style="background-color: ${data.styleConfig.emphasis.strong.color}" title="强调颜色"></div>` : ''
+                                    }
+                                    ${data.styleConfig.paragraph.colorMode === 'multiple' && data.styleConfig.paragraph.colors.length > 0 ? 
+                                        data.styleConfig.paragraph.colors.map(color => 
+                                            `<div class="w-3 h-3 rounded-full" style="background-color: ${color}" title="段落颜色"></div>`
+                                        ).join('') : 
+                                        data.styleConfig.paragraph.color ? 
+                                            `<div class="w-3 h-3 rounded-full" style="background-color: ${data.styleConfig.paragraph.color}" title="段落颜色"></div>` : ''
+                                    }
                                 </div>
-                                <div class="flex gap-1">
-                                    <button class="apply-template bg-primary text-white p-1 rounded-md text-sm hover:bg-primary-dark" title="应用此模板" data-name="${name}">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                    </button>
-                                    ${data.type !== 'built-in' ? `
-                                    <button class="delete-template bg-red-500 text-white p-1 rounded-md text-sm hover:bg-red-600" title="删除此模板" data-name="${name}">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
-                                        </svg>
-                                    </button>
-                                    ` : ''}
+                                <div class="flex items-center space-x-2 flex-shrink-0">
+                                    <div class="font-medium text-sm">${name}</div>
+                                    ${data.type === 'built-in' ? 
+                                        '<span class="bg-primary text-white px-1.5 py-0.5 rounded text-xs">内置</span>' : 
+                                        '<span class="bg-gray-200 dark:bg-gray-600 px-1.5 py-0.5 rounded text-xs">自定义</span>'
+                                    }
+                                    <span class="text-xs text-gray-500 dark:text-gray-400">${formattedDate}</span>
                                 </div>
+                                ${data.description ? `<div class="text-xs text-gray-600 dark:text-gray-300 truncate">${data.description}</div>` : ''}
                             </div>
-                            ${data.description ? `<p class="text-sm text-gray-600 dark:text-gray-300">${data.description}</p>` : ''}
-                            <div class="flex flex-wrap gap-1 mt-1">
-                                ${data.styleConfig.headings.h1.color ? 
-                                    `<div class="w-5 h-5 rounded-full" style="background-color: ${data.styleConfig.headings.h1.color}" title="标题颜色"></div>` : ''
-                                }
-                                ${data.styleConfig.emphasis.strong.color ? 
-                                    `<div class="w-5 h-5 rounded-full" style="background-color: ${data.styleConfig.emphasis.strong.color}" title="强调颜色"></div>` : ''
-                                }
-                                ${data.styleConfig.paragraph.colorMode === 'multiple' && data.styleConfig.paragraph.colors.length > 0 ? 
-                                    data.styleConfig.paragraph.colors.map(color => 
-                                        `<div class="w-5 h-5 rounded-full" style="background-color: ${color}" title="段落颜色"></div>`
-                                    ).join('') : 
-                                    data.styleConfig.paragraph.color ? 
-                                        `<div class="w-5 h-5 rounded-full" style="background-color: ${data.styleConfig.paragraph.color}" title="段落颜色"></div>` : ''
-                                }
+                            <div class="flex gap-1 flex-shrink-0 ml-2">
+                                <button class="apply-template bg-primary text-white p-1 rounded-md text-sm hover:bg-primary-dark" title="应用此模板" data-name="${name}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </button>
+                                ${data.type !== 'built-in' ? `
+                                <button class="delete-template bg-red-500 text-white p-1 rounded-md text-sm hover:bg-red-600" title="删除此模板" data-name="${name}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                                    </svg>
+                                </button>
+                                ` : ''}
                             </div>
                         </div>
                     `;
